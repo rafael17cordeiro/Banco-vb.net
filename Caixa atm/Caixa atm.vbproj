@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D966118-8A82-4002-8943-108DA97F9D98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Caixa_atm.My.MyApplication</StartupObject>
+    <RootNamespace>Caixa_atm</RootNamespace>
+    <AssemblyName>Caixa atm</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Caixa atm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Caixa atm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_admin.Designer.vb">
+      <DependentUpon>Form_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_adminPin.Designer.vb">
+      <DependentUpon>Form_adminPin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_adminPin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_alterarPin.Designer.vb">
+      <DependentUpon>form_alterarPin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_alterarPin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_avisoSair.Designer.vb">
+      <DependentUpon>Form_avisoSair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_avisoSair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Desbloquear.Designer.vb">
+      <DependentUpon>Form_Desbloquear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Desbloquear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_levantamentos.Designer.vb">
+      <DependentUpon>Form_levantamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_levantamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login.Designer.vb">
+      <DependentUpon>Form_login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ambiente.Designer.vb">
+      <DependentUpon>Form_ambiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ambiente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_opçoes.Designer.vb">
+      <DependentUpon>Form_opçoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_opçoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_deposito.Designer.vb">
+      <DependentUpon>Form_deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_pagamentos.Designer.vb">
+      <DependentUpon>Form_pagamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_pagamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sair.Designer.vb">
+      <DependentUpon>Form_sair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_saldo.Designer.vb">
+      <DependentUpon>Form_saldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_saldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sobre.Designer.vb">
+      <DependentUpon>Form_sobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_transferir.Designer.vb">
+      <DependentUpon>Form_transferir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_transferir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_admin.resx">
+      <DependentUpon>Form_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_adminPin.resx">
+      <DependentUpon>Form_adminPin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_alterarPin.resx">
+      <DependentUpon>form_alterarPin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_avisoSair.resx">
+      <DependentUpon>Form_avisoSair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Desbloquear.resx">
+      <DependentUpon>Form_Desbloquear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_levantamentos.resx">
+      <DependentUpon>Form_levantamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_login.resx">
+      <DependentUpon>Form_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ambiente.resx">
+      <DependentUpon>Form_ambiente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_opçoes.resx">
+      <DependentUpon>Form_opçoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_deposito.resx">
+      <DependentUpon>Form_deposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_pagamentos.resx">
+      <DependentUpon>Form_pagamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sair.resx">
+      <DependentUpon>Form_sair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_saldo.resx">
+      <DependentUpon>Form_saldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sobre.resx">
+      <DependentUpon>Form_sobre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_transferir.resx">
+      <DependentUpon>Form_transferir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-bubble %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dnnimagehandler-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin-code1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custas+Judiciais+Outras+Operações.+Pagamentos+ao+Estado.+Pagamento+à.+Segurança+Social.+Licenciamento+de..jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-hand %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38c492c1973da3210ac7afc1998d9495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
