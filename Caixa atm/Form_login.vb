@@ -75,8 +75,10 @@ Public Class Form_login
                 MsgBox("Numero de utilizador não deve conter caraceteres")
 
             ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
-                Me.Hide()
-                Form_opçoes.Show()
+
+                Timer1.Interval = 5
+                Timer1.Start()
+
             ElseIf num_ut <> 0 And num_block(num_ut) = num_ut <> 0 Then
                 MsgBox("A sua conta esta Banida ")
             ElseIf checker_ut = True And checker_pin = False Then
@@ -110,7 +112,6 @@ Public Class Form_login
             End If
             'nesta secção serve simplesmente para o utilizador saber melhor que erro ele esta a cometer e avisa lo do mesmo
             '--------------------------- fim secção error checker --------------------------
-
         ElseIf e.KeyCode = 27 Then
             Me.Hide()
             Form_avisoSair.Show()
@@ -202,8 +203,10 @@ Public Class Form_login
             MsgBox("Numero de utilizador não deve conter caraceteres")
 
         ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
-            Me.Hide()
-            Form_opçoes.Show()
+
+            Timer1.Interval = 5
+            Timer1.Start()
+
         ElseIf num_ut <> 0 And num_block(num_ut) = num_ut <> 0 Then
             MsgBox("A sua conta esta Banida ")
         ElseIf checker_ut = True And checker_pin = False Then
@@ -213,6 +216,7 @@ Public Class Form_login
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
             error_conter += 1
+            BunifuProgressBar1.Value = 0
 
         ElseIf checker_ut = False And checker_pin = True Then
             MsgBox("Numero de utilizador não correspondete")
@@ -221,12 +225,14 @@ Public Class Form_login
             checker_pin = False
             checker_ut = False
 
+
         ElseIf num_ut <> 69 And pin <> 6969 Then
             MsgBox("Dados não correspondetes")
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
             checker_pin = False
             checker_ut = False
+
 
         End If
 
@@ -279,6 +285,18 @@ Public Class Form_login
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Me.Hide()
         Form_sobre.Show()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
+        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+            Timer1.Stop()
+            If Timer1.Enabled = False Then 'execute code when the timer stops
+                Me.Hide()
+                Form_opçoes.Show()
+            End If
+        End If
 
     End Sub
 End Class

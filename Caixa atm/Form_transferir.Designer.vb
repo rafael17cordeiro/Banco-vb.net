@@ -22,6 +22,7 @@ Partial Class Form_transferir
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_transferir))
         Me.Label_euro = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -41,6 +42,8 @@ Partial Class Form_transferir
         Me.Label_saldo = New System.Windows.Forms.Label()
         Me.Label_num = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,6 +95,7 @@ Partial Class Form_transferir
         Me.BunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuProgressBar1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_euro)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_logo)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_montante)
@@ -122,7 +126,7 @@ Partial Class Form_transferir
         Me.PictureBox_logo.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox_logo.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.PictureBox_logo.Image = Global.Caixa_atm.My.Resources.Resources.earth
-        Me.PictureBox_logo.Location = New System.Drawing.Point(708, 35)
+        Me.PictureBox_logo.Location = New System.Drawing.Point(708, 47)
         Me.PictureBox_logo.Name = "PictureBox_logo"
         Me.PictureBox_logo.Size = New System.Drawing.Size(80, 80)
         Me.PictureBox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -319,6 +323,21 @@ Partial Class Form_transferir
         Me.Label12.TabIndex = 43
         Me.Label12.Text = "Numero da conta :"
         '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(5, 24)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 67
+        Me.BunifuProgressBar1.Value = 0
+        '
+        'Timer1
+        '
+        '
         'Form_transferir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -361,4 +380,6 @@ Partial Class Form_transferir
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents button_transferir As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox_logo As PictureBox
+    Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
+    Friend WithEvents Timer1 As Timer
 End Class

@@ -13,14 +13,9 @@
         End If
 
         If e.KeyCode = 13 Then
-            If Val(TextBox_montante.Text) > saldo Then
-                MsgBox("Não têm denheiro suficiente")
-            Else
-                clientes(Form_login.num_ut, 0) -= Val(TextBox_montante.Text)
-                MsgBox("Pagamento executado com sucesso!")
-                Me.Close()
-                Form_opçoes.Show()
-            End If
+            Timer1.Interval = 5
+            Timer1.Start()
+
         End If
     End Sub
     Private Function RoundedRectangle(rect As RectangleF, diam As Single) As Drawing2D.GraphicsPath
@@ -69,18 +64,28 @@
     End Sub
 
     Private Sub BunifuThinButton26_Click(sender As Object, e As EventArgs) Handles button_pagar.Click
-        If Val(TextBox_montante.Text) > saldo Then
-            MsgBox("Não têm denheiro suficiente")
-        Else
-            clientes(Form_login.num_ut, 0) -= Val(TextBox_montante.Text)
-            MsgBox("Pagamento executado com sucesso!")
-            Me.Close()
-            Form_opçoes.Show()
-        End If
-
+        Timer1.Interval = 5
+        Timer1.Start()
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
+        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+            Timer1.Stop()
+            If Timer1.Enabled = False Then 'execute code when the timer stops
+                If Val(TextBox_montante.Text) > saldo Then
+                    MsgBox("Não têm denheiro suficiente")
+                    BunifuProgressBar1.Value = 0
+                ElseIf TextBox_montante.text = "" And TextBox_referencia.Text = "" Then
+                    MsgBox("dados invalidos")
+                    BunifuProgressBar1.Value = 0
+                Else
+                    clientes(Form_login.num_ut, 0) -= Val(TextBox_montante.Text)
+                    MsgBox("Pagamento executado com sucesso!")
+                    Me.Close()
+                    Form_opçoes.Show()
+                End If
+            End If
+        End If
     End Sub
 End Class

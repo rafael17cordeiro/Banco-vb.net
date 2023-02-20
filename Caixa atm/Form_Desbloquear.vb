@@ -24,12 +24,13 @@
             Me.Close()
             Form_admin.Show()
         ElseIf result = DialogResult.No Then
-            ' Code to be executed if "No" button is clicked
+
         End If
     End Sub
 
     Private Sub BunifuThinButton26_Click(sender As Object, e As EventArgs) Handles button_desbloquear.Click
         Dim num As Integer = Val(TextBox_num.Text)
+
         num_block(num) = 0
         MsgBox("Conta liberada com sucesso")
         Me.Close()

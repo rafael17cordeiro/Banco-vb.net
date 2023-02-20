@@ -22,10 +22,12 @@ Partial Class Form_levantamentos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_levantamentos))
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.button_levantar = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -38,6 +40,7 @@ Partial Class Form_levantamentos
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -65,6 +68,7 @@ Partial Class Form_levantamentos
         Me.BunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuProgressBar1)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox3)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_cancelar)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_levantar)
@@ -87,12 +91,24 @@ Partial Class Form_levantamentos
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(827, 524)
         Me.BunifuGradientPanel1.TabIndex = 59
         '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(10, 20)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 67
+        Me.BunifuProgressBar1.Value = 0
+        '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.PictureBox3.Image = Global.Caixa_atm.My.Resources.Resources.earth
-        Me.PictureBox3.Location = New System.Drawing.Point(701, 34)
+        Me.PictureBox3.Location = New System.Drawing.Point(715, 43)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(81, 79)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -267,6 +283,9 @@ Partial Class Form_levantamentos
         Me.BunifuThinButton23.TabIndex = 59
         Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Timer1
+        '
+        '
         'Form_levantamentos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -304,4 +323,6 @@ Partial Class Form_levantamentos
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
+    Friend WithEvents Timer1 As Timer
 End Class

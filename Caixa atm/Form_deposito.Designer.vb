@@ -22,6 +22,7 @@ Partial Class Form_deposito
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_deposito))
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -38,6 +39,8 @@ Partial Class Form_deposito
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -65,6 +68,7 @@ Partial Class Form_deposito
         Me.BunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuProgressBar1)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox3)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton21)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton22)
@@ -92,7 +96,7 @@ Partial Class Form_deposito
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.PictureBox3.Image = Global.Caixa_atm.My.Resources.Resources.earth
-        Me.PictureBox3.Location = New System.Drawing.Point(705, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(707, 23)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(80, 80)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -267,6 +271,21 @@ Partial Class Form_deposito
         Me.BunifuThinButton23.TabIndex = 59
         Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Timer1
+        '
+        '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(3, 0)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 67
+        Me.BunifuProgressBar1.Value = 0
+        '
         'Form_deposito
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -304,4 +323,6 @@ Partial Class Form_deposito
     Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuThinButton22 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
 End Class

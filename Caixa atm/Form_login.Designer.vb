@@ -22,6 +22,7 @@ Partial Class Form_login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_login))
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,6 +39,8 @@ Partial Class Form_login
         Me.PictureBox_ver = New System.Windows.Forms.PictureBox()
         Me.PictureBox_esconder = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,10 +55,10 @@ Partial Class Form_login
         Me.BunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuProgressBar1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label1)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox1)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_admin)
-        Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_logo)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_sair)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_entrar)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_pin)
@@ -66,6 +69,7 @@ Partial Class Form_login
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_ver)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_esconder)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_logo)
         Me.BunifuGradientPanel1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -274,6 +278,22 @@ Partial Class Form_login
         Me.Label2.Text = "X"
         Me.Label2.Visible = False
         '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(3, 0)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 66
+        Me.BunifuProgressBar1.Value = 0
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'Form_login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -314,4 +334,6 @@ Partial Class Form_login
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
+    Friend WithEvents Timer1 As Timer
 End Class

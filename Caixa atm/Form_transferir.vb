@@ -12,29 +12,8 @@
             End If
         End If
         If e.KeyCode = 13 Then
-            Dim iban As Integer = Val(TextBox_iban.Text)
-            Dim montante As Integer = Val(TextBox_montante.Text)
-
-
-            If iban > LIM Or TextBox_iban.Text = "" Then
-                MsgBox("O numero de iban inserido não é válido")
-            ElseIf montante < 0 Then
-                MsgBox("Não é possibel fazer transferências negativas")
-            ElseIf montante > saldo Then
-                MsgBox("Não tem saldo suficiente")
-            ElseIf TextBox_montante.Text = "" Then
-                MsgBox("Montante invalidado")
-            Else
-
-                clientes(Form_login.num_ut, 0) -= montante
-
-                clientes(iban, 0) += montante
-
-                MsgBox("Transferência executado com sucesso!")
-                Me.Close()
-                Form_opçoes.Show()
-            End If
-
+            Timer1.Interval = 5
+            Timer1.Start()
         End If
 
 
@@ -115,39 +94,52 @@
     End Sub
 
     Private Sub BunifuThinButton26_Click(sender As Object, e As EventArgs) Handles button_transferir.Click
-        Dim iban As Integer = Val(TextBox_iban.Text)
-        Dim montante As Integer = Val(TextBox_montante.Text)
-        Dim checker_ut As Boolean = False
-
-        For i = 0 To LIM
-            If iban = i Then
-                checker_ut = True
-                Exit For
-            Else
-                checker_ut = False
-            End If
-        Next
-
-        If checker_ut = False Or TextBox_iban.Text = "" Then
-            MsgBox("O numero de iban inserido não é válido")
-        ElseIf montante < 0 Then
-            MsgBox("Não é possivel fazer transferências negativas")
-        ElseIf montante > saldo Then
-            MsgBox("Não tem saldo suficiente")
-        ElseIf TextBox_montante.Text = "" Then
-            MsgBox("Montante invalidado")
-        Else
-
-            clientes(Form_login.num_ut, 0) -= montante
-
-            clientes(iban, 0) += montante
-
-            MsgBox("Transferência executado com sucesso!")
-            Me.Close()
-            Form_opçoes.Show()
-        End If
+        Timer1.Interval = 5
+        Timer1.Start()
 
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
+        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+            Timer1.Stop()
+            If Timer1.Enabled = False Then 'execute code when the timer stops
+                Dim iban As Integer = Val(TextBox_iban.Text)
+                Dim montante As Integer = Val(TextBox_montante.Text)
+                Dim checker_ut As Boolean = False
 
+                For i = 0 To LIM
+                    If iban = i Then
+                        checker_ut = True
+                        Exit For
+                    Else
+                        checker_ut = False
+                    End If
+                Next
+
+                If checker_ut = False Or TextBox_iban.Text = "" Then
+                    MsgBox("O numero de iban inserido não é válido")
+                    BunifuProgressBar1.Value = 0
+                ElseIf montante < 0 Then
+                    MsgBox("Não é possivel fazer transferências negativas")
+                    BunifuProgressBar1.Value = 0
+                ElseIf montante > saldo Then
+                    MsgBox("Não tem saldo suficiente")
+                    BunifuProgressBar1.Value = 0
+                ElseIf TextBox_montante.Text = "" Then
+                    MsgBox("Montante invalidado")
+                    BunifuProgressBar1.Value = 0
+                Else
+
+                    clientes(Form_login.num_ut, 0) -= montante
+
+                    clientes(iban, 0) += montante
+
+                    MsgBox("Transferência executado com sucesso!")
+                    Me.Close()
+                    Form_opçoes.Show()
+                End If
+            End If
+        End If
+    End Sub
 End Class
