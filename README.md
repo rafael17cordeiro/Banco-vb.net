@@ -1,4 +1,4 @@
-# Banco VB.net Repo 🌐
+# Banco Repo 🌐
 
 **`⚒️ Steel working on it `**<br>
 ### <a href="https://github.com/rafael17cordeiro/Calculadora-vb.net.git">Calculator</a>
