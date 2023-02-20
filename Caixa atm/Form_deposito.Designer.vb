@@ -84,7 +84,7 @@ Partial Class Form_deposito
         Me.BunifuGradientPanel1.Location = New System.Drawing.Point(1, 0)
         Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
         Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(799, 502)
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(802, 502)
         Me.BunifuGradientPanel1.TabIndex = 56
         '
         'PictureBox3

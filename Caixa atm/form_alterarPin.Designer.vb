@@ -330,6 +330,7 @@ Partial Class form_alterarPin
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "form_alterarPin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "form_alterarPin"

@@ -54,7 +54,7 @@ Partial Class Form_avisoSair
         Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.Firebrick
         Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.Firebrick
-        Me.BunifuThinButton21.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuThinButton21.BackColor = System.Drawing.SystemColors.Control
         Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
         Me.BunifuThinButton21.ButtonText = "Não"
         Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
@@ -79,7 +79,7 @@ Partial Class Form_avisoSair
         Me.BunifuThinButton22.ActiveFillColor = System.Drawing.Color.ForestGreen
         Me.BunifuThinButton22.ActiveForecolor = System.Drawing.Color.White
         Me.BunifuThinButton22.ActiveLineColor = System.Drawing.Color.ForestGreen
-        Me.BunifuThinButton22.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuThinButton22.BackColor = System.Drawing.SystemColors.Control
         Me.BunifuThinButton22.BackgroundImage = CType(resources.GetObject("BunifuThinButton22.BackgroundImage"), System.Drawing.Image)
         Me.BunifuThinButton22.ButtonText = "Sim"
         Me.BunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand
@@ -116,6 +116,7 @@ Partial Class Form_avisoSair
         Me.ClientSize = New System.Drawing.Size(634, 201)
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_avisoSair"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_avisoSair"

@@ -276,6 +276,7 @@ Partial Class Form_levantamentos
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "Form_levantamentos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

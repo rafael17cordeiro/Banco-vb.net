@@ -103,6 +103,7 @@ Partial Class Form_sair
         Me.ClientSize = New System.Drawing.Size(634, 201)
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_sair"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_sair"
