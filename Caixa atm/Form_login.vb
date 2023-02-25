@@ -14,7 +14,7 @@ Module codigoAtm
     Public erro As Integer = 1
     Public saldo As Double
     Public num_block(100) As Integer
-    Public notas() As Integer = {20, 20, 20, 20, 20}
+    Public notas() As Integer = {100, 50, 20, 10, 5}
     Public clientes(LIM, COL) As Single
     Sub inciarClientes()
         For i = 0 To LIM
@@ -297,6 +297,14 @@ Public Class Form_login
                 Form_opçoes.Show()
             End If
         End If
+
+    End Sub
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_user.KeyPress, TextBox_pin.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
     End Sub
 End Class

@@ -71,9 +71,7 @@ Public Class form_alterarPin
         End If
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
-    End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         BunifuProgressBar1.Value += 1 'increment the value of the progress bar
@@ -101,6 +99,12 @@ Public Class form_alterarPin
                     Form_opçoes.Show()
                 End If
             End If
+        End If
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_pin.KeyPress, TextBox_confirmar.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
         End If
     End Sub
 End Class

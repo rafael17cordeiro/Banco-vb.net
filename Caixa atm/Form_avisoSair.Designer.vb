@@ -64,8 +64,8 @@ Partial Class Form_avisoSair
         Me.BunifuThinButton21.IdleCornerRadius = 20
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.Firebrick
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
-        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.White
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(139, 122)
+        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(155, 122)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(177, 50)
@@ -89,8 +89,8 @@ Partial Class Form_avisoSair
         Me.BunifuThinButton22.IdleCornerRadius = 20
         Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen
         Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.White
-        Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.White
-        Me.BunifuThinButton22.Location = New System.Drawing.Point(326, 122)
+        Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuThinButton22.Location = New System.Drawing.Point(342, 122)
         Me.BunifuThinButton22.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuThinButton22.Name = "BunifuThinButton22"
         Me.BunifuThinButton22.Size = New System.Drawing.Size(177, 50)

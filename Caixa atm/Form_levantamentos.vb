@@ -70,20 +70,44 @@ Public Class Form_levantamentos
         End If
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
-    End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         BunifuProgressBar1.Value += 1 'increment the value of the progress bar
         If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
             Timer1.Stop()
             If Timer1.Enabled = False Then 'execute code when the timer stops
+                ' Definir as notas disponíveis
+
+
+                ' Obter o montante solicitado pelo utilizador
                 Dim montante As Integer = Val(TextBox_montante.Text)
+
+                ' Verificar se o montante é válido
                 If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 Then
                     MsgBox("Montante invalido")
                     BunifuProgressBar1.Value = 0
                 Else
+                    ' Calcular quantas notas de cada valor serão necessárias
+                    Dim notasRecebidas() As Integer = {0, 0, 0, 0, 0}
+                    Dim montanteRestante As Integer = montante
+                    For i As Integer = 0 To notas.Length - 1
+                        While montanteRestante >= notas(i) AndAlso notas(i) <= notas(i)
+                            notasRecebidas(i) += 1
+                            montanteRestante -= notas(i)
+                        End While
+                    Next
+
+                    ' Exibir as notas que o utilizador receberá
+                    Dim mensagem As String = "Notas recebidas:" & vbCrLf
+                    For i As Integer = 0 To notasRecebidas.Length - 1
+                        If notasRecebidas(i) > 0 Then
+                            mensagem &= notasRecebidas(i) & " nota(s) de " & notas(i) & " euros" & vbCrLf
+                        End If
+                    Next
+                    MsgBox(mensagem)
+
+                    ' Atualizar o saldo do cliente e fechar o formulário
                     clientes(Form_login.num_ut, 0) -= Val(TextBox_montante.Text)
                     MsgBox("Dinheiro levantado com sucesso!")
                     Me.Close()
@@ -92,5 +116,11 @@ Public Class Form_levantamentos
             End If
         End If
 
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_montante.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
     End Sub
 End Class

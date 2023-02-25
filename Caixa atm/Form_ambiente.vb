@@ -3,9 +3,8 @@
 Public Class Form2
     Private Sub Form2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = 49 Then
-            For i = 0 To COL
-                saldo = clientes(i, 0)
-            Next
+
+            saldo = clientes(Form_login.num_ut, 0)
 
             MsgBox("Multibanco" & vbNewLine & "--------------------------------" & vbNewLine& & "Numero de utilizador : " & Form_login.num_ut & vbNewLine & "Saldo disponivel :" & saldo & "$" & vbNewLine & vbNewLine & "--------------------------------" & vbNewLine & "data : " & currentDate & vbNewLine & "Hora : " & currentHour)
             Me.Close()

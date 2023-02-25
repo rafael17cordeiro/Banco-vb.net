@@ -76,4 +76,10 @@
         Form_admin.Show()
 
     End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_num.KeyPress, TextBox_pin.KeyPress, TextBox_confirmar.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

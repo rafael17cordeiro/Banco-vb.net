@@ -27,6 +27,7 @@ Partial Class Form_deposito
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuThinButton22 = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -40,7 +41,6 @@ Partial Class Form_deposito
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -90,6 +90,18 @@ Partial Class Form_deposito
         Me.BunifuGradientPanel1.Quality = 10
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(802, 502)
         Me.BunifuGradientPanel1.TabIndex = 56
+        '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(3, 0)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 67
+        Me.BunifuProgressBar1.Value = 0
         '
         'PictureBox3
         '
@@ -273,18 +285,6 @@ Partial Class Form_deposito
         '
         'Timer1
         '
-        '
-        'BunifuProgressBar1
-        '
-        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuProgressBar1.BorderRadius = 10
-        Me.BunifuProgressBar1.Location = New System.Drawing.Point(3, 0)
-        Me.BunifuProgressBar1.MaximumValue = 100
-        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
-        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
-        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
-        Me.BunifuProgressBar1.TabIndex = 67
-        Me.BunifuProgressBar1.Value = 0
         '
         'Form_deposito
         '
