@@ -38,9 +38,9 @@
     End Sub
 
     Private Sub Form_transferir_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For i = 0 To COL
-            saldo = clientes(i, 0)
-        Next
+
+        saldo = clientes(Form_login.num_ut, 0)
+
 
         Label12.Text = Form_login.num_ut
         Label11.Text = saldo & "$"
@@ -141,5 +141,9 @@
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
+
     End Sub
 End Class

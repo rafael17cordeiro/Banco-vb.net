@@ -29,6 +29,7 @@ Partial Class Form_transferir
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label_montante = New System.Windows.Forms.Label()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.PictureBox_logo = New System.Windows.Forms.PictureBox()
         Me.TextBox_montante = New System.Windows.Forms.TextBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -42,7 +43,6 @@ Partial Class Form_transferir
         Me.Label_saldo = New System.Windows.Forms.Label()
         Me.Label_num = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,6 +120,18 @@ Partial Class Form_transferir
         Me.BunifuGradientPanel1.Quality = 10
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(803, 525)
         Me.BunifuGradientPanel1.TabIndex = 55
+        '
+        'BunifuProgressBar1
+        '
+        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuProgressBar1.BorderRadius = 10
+        Me.BunifuProgressBar1.Location = New System.Drawing.Point(5, 24)
+        Me.BunifuProgressBar1.MaximumValue = 100
+        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
+        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
+        Me.BunifuProgressBar1.TabIndex = 67
+        Me.BunifuProgressBar1.Value = 0
         '
         'PictureBox_logo
         '
@@ -322,18 +334,6 @@ Partial Class Form_transferir
         Me.Label12.Size = New System.Drawing.Size(207, 24)
         Me.Label12.TabIndex = 43
         Me.Label12.Text = "Numero da conta :"
-        '
-        'BunifuProgressBar1
-        '
-        Me.BunifuProgressBar1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuProgressBar1.BorderRadius = 10
-        Me.BunifuProgressBar1.Location = New System.Drawing.Point(5, 24)
-        Me.BunifuProgressBar1.MaximumValue = 100
-        Me.BunifuProgressBar1.Name = "BunifuProgressBar1"
-        Me.BunifuProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue
-        Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
-        Me.BunifuProgressBar1.TabIndex = 67
-        Me.BunifuProgressBar1.Value = 0
         '
         'Timer1
         '
