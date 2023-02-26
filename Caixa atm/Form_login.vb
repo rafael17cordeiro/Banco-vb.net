@@ -83,8 +83,6 @@ Public Class Form_login
                 MsgBox("A sua conta esta Banida ")
             ElseIf checker_ut = True And checker_pin = False Then
                 MsgBox("Pin não correspondente")
-                checker_pin = False
-                checker_ut = False
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
                 error_conter += 1
@@ -93,15 +91,13 @@ Public Class Form_login
                 MsgBox("Numero de utilizador não correspondete")
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
-                checker_pin = False
-                checker_ut = False
+
 
             ElseIf num_ut <> 69 And pin <> 6969 Then
                 MsgBox("Dados não correspondetes")
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
-                checker_pin = False
-                checker_ut = False
+
 
             End If
 
@@ -211,8 +207,6 @@ Public Class Form_login
             MsgBox("A sua conta esta Banida ")
         ElseIf checker_ut = True And checker_pin = False Then
             MsgBox("Pin não correspondente")
-            checker_pin = False
-            checker_ut = False
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
             error_conter += 1

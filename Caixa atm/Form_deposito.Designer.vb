@@ -205,7 +205,7 @@ Partial Class Form_deposito
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(162, 249)
+        Me.TextBox1.Location = New System.Drawing.Point(162, 248)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(232, 33)
         Me.TextBox1.TabIndex = 25

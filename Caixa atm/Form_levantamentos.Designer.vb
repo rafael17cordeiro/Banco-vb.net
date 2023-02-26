@@ -30,7 +30,6 @@ Partial Class Form_levantamentos
         Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.button_levantar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label_saldo = New System.Windows.Forms.Label()
@@ -41,6 +40,7 @@ Partial Class Form_levantamentos
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.button_levantar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -139,31 +139,6 @@ Partial Class Form_levantamentos
         Me.button_cancelar.Size = New System.Drawing.Size(169, 46)
         Me.button_cancelar.TabIndex = 61
         Me.button_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'button_levantar
-        '
-        Me.button_levantar.ActiveBorderThickness = 1
-        Me.button_levantar.ActiveCornerRadius = 20
-        Me.button_levantar.ActiveFillColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_levantar.ActiveLineColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.BackColor = System.Drawing.Color.Transparent
-        Me.button_levantar.BackgroundImage = CType(resources.GetObject("button_levantar.BackgroundImage"), System.Drawing.Image)
-        Me.button_levantar.ButtonText = "Levantar"
-        Me.button_levantar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.button_levantar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button_levantar.ForeColor = System.Drawing.Color.White
-        Me.button_levantar.IdleBorderThickness = 1
-        Me.button_levantar.IdleCornerRadius = 20
-        Me.button_levantar.IdleFillColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.IdleForecolor = System.Drawing.Color.White
-        Me.button_levantar.IdleLineColor = System.Drawing.Color.White
-        Me.button_levantar.Location = New System.Drawing.Point(627, 462)
-        Me.button_levantar.Margin = New System.Windows.Forms.Padding(5)
-        Me.button_levantar.Name = "button_levantar"
-        Me.button_levantar.Size = New System.Drawing.Size(169, 46)
-        Me.button_levantar.TabIndex = 60
-        Me.button_levantar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuTextbox1
         '
@@ -286,6 +261,31 @@ Partial Class Form_levantamentos
         'Timer1
         '
         '
+        'button_levantar
+        '
+        Me.button_levantar.ActiveBorderThickness = 1
+        Me.button_levantar.ActiveCornerRadius = 20
+        Me.button_levantar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.ActiveForecolor = System.Drawing.Color.White
+        Me.button_levantar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.BackColor = System.Drawing.Color.Transparent
+        Me.button_levantar.BackgroundImage = CType(resources.GetObject("button_levantar.BackgroundImage"), System.Drawing.Image)
+        Me.button_levantar.ButtonText = "Levantar"
+        Me.button_levantar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.button_levantar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.button_levantar.ForeColor = System.Drawing.Color.White
+        Me.button_levantar.IdleBorderThickness = 1
+        Me.button_levantar.IdleCornerRadius = 20
+        Me.button_levantar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.IdleForecolor = System.Drawing.Color.White
+        Me.button_levantar.IdleLineColor = System.Drawing.Color.White
+        Me.button_levantar.Location = New System.Drawing.Point(627, 462)
+        Me.button_levantar.Margin = New System.Windows.Forms.Padding(5)
+        Me.button_levantar.Name = "button_levantar"
+        Me.button_levantar.Size = New System.Drawing.Size(169, 46)
+        Me.button_levantar.TabIndex = 60
+        Me.button_levantar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form_levantamentos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -313,7 +313,6 @@ Partial Class Form_levantamentos
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents button_levantar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label_saldo As Label
@@ -325,4 +324,5 @@ Partial Class Form_levantamentos
     Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents button_levantar As Bunifu.Framework.UI.BunifuThinButton2
 End Class
