@@ -24,7 +24,6 @@ Partial Class form_alterarPin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_alterarPin))
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox_logo = New System.Windows.Forms.PictureBox()
         Me.TextBox_confirmar = New System.Windows.Forms.TextBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -48,18 +47,6 @@ Partial Class form_alterarPin
         Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(419, 331)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(25, 28)
-        Me.Label8.TabIndex = 46
-        Me.Label8.Text = "$"
-        '
         'PictureBox_logo
         '
         Me.PictureBox_logo.BackColor = System.Drawing.Color.Transparent
@@ -74,11 +61,11 @@ Partial Class form_alterarPin
         '
         'TextBox_confirmar
         '
-        Me.TextBox_confirmar.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_confirmar.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_confirmar.Location = New System.Drawing.Point(178, 331)
         Me.TextBox_confirmar.Multiline = True
         Me.TextBox_confirmar.Name = "TextBox_confirmar"
-        Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox_confirmar.Size = New System.Drawing.Size(231, 30)
         Me.TextBox_confirmar.TabIndex = 51
         '
@@ -147,11 +134,11 @@ Partial Class form_alterarPin
         '
         'TextBox_pin
         '
-        Me.TextBox_pin.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_pin.Location = New System.Drawing.Point(119, 264)
         Me.TextBox_pin.Multiline = True
         Me.TextBox_pin.Name = "TextBox_pin"
-        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox_pin.Size = New System.Drawing.Size(231, 30)
         Me.TextBox_pin.TabIndex = 39
         '
@@ -252,7 +239,6 @@ Partial Class form_alterarPin
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuProgressBar1)
-        Me.BunifuGradientPanel1.Controls.Add(Me.Label8)
         Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox_logo)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_confirmar)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_cancelar)
@@ -340,8 +326,6 @@ Partial Class form_alterarPin
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox_logo As PictureBox
     Friend WithEvents TextBox_confirmar As TextBox
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
