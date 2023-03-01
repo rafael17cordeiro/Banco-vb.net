@@ -1,6 +1,8 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form_avisoSair
+    Private borderForm As New Form
+
     Private Function RoundedRectangle(rect As RectangleF, diam As Single) As Drawing2D.GraphicsPath
         Dim path As New Drawing2D.GraphicsPath
         path.AddArc(rect.Left, rect.Top, diam, diam, 180, 90)
@@ -25,6 +27,22 @@ Public Class Form_avisoSair
         With Me
 
             .Region = New Region(RoundedRectangle(.ClientRectangle, 50))
+
+        End With
+
+        With borderForm
+            .ShowInTaskbar = False
+            .FormBorderStyle = Windows.Forms.FormBorderStyle.None
+            .StartPosition = FormStartPosition.Manual
+            .BackColor = Color.Black
+            .Opacity = 0.25
+            Dim r As Rectangle = Me.Bounds
+            r.Inflate(2, 2)
+            .Bounds = r
+            .Region = New Region(RoundedRectangle(.ClientRectangle, 50))
+            r = New Rectangle(3, 3, Me.Width - 4, Me.Height - 4)
+            .Region.Exclude(RoundedRectangle(r, 48))
+            .Show(Me)
         End With
     End Sub
 
@@ -39,7 +57,7 @@ Public Class Form_avisoSair
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Me.Close()
-        Form_login.Show()
+
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -47,5 +65,7 @@ Public Class Form_avisoSair
         Form_sair.Show()
     End Sub
 
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
+    End Sub
 End Class

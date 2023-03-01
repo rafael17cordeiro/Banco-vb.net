@@ -22,7 +22,7 @@ Public Class Form_opçoes
             form_alterarPin.Show()
         ElseIf e.KeyCode = 27 Then
             Form_avisoSair.Show()
-            Me.Hide()
+
 
         End If
     End Sub
@@ -93,7 +93,7 @@ Public Class Form_opçoes
     Private Sub BunifuThinButton25_Click(sender As Object, e As EventArgs) Handles button_sair.Click
 
         Form_avisoSair.Show()
-        Me.Hide()
+
     End Sub
 
     Private Sub BunifuThinButton26_Click(sender As Object, e As EventArgs) Handles button_2.Click
@@ -128,7 +128,7 @@ Public Class Form_opçoes
 
     Private Sub BunifuThinButton213_Click(sender As Object, e As EventArgs) Handles button_6.Click
         Me.Hide()
-        form_alterarPin.show
+        form_alterarPin.Show()
     End Sub
 
     Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint

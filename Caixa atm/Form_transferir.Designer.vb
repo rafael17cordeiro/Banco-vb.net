@@ -41,9 +41,9 @@ Partial Class Form_transferir
         Me.Label_saldo = New System.Windows.Forms.Label()
         Me.Label_num = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,7 +54,7 @@ Partial Class Form_transferir
         Me.Label_euro.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_euro.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_euro.ForeColor = System.Drawing.Color.White
-        Me.Label_euro.Location = New System.Drawing.Point(419, 331)
+        Me.Label_euro.Location = New System.Drawing.Point(433, 331)
         Me.Label_euro.Name = "Label_euro"
         Me.Label_euro.Size = New System.Drawing.Size(25, 28)
         Me.Label_euro.TabIndex = 46
@@ -84,7 +84,7 @@ Partial Class Form_transferir
         Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(53, 333)
+        Me.Label_montante.Location = New System.Drawing.Point(67, 333)
         Me.Label_montante.Name = "Label_montante"
         Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 37
@@ -147,11 +147,10 @@ Partial Class Form_transferir
         '
         'TextBox_montante
         '
-        Me.TextBox_montante.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(179, 332)
-        Me.TextBox_montante.Multiline = True
+        Me.TextBox_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_montante.Location = New System.Drawing.Point(192, 330)
         Me.TextBox_montante.Name = "TextBox_montante"
-        Me.TextBox_montante.Size = New System.Drawing.Size(231, 29)
+        Me.TextBox_montante.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_montante.TabIndex = 51
         '
         'button_cancelar
@@ -184,9 +183,9 @@ Partial Class Form_transferir
         '
         Me.button_transferir.ActiveBorderThickness = 1
         Me.button_transferir.ActiveCornerRadius = 20
-        Me.button_transferir.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_transferir.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_transferir.ActiveForecolor = System.Drawing.Color.White
-        Me.button_transferir.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_transferir.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_transferir.BackColor = System.Drawing.Color.Transparent
         Me.button_transferir.BackgroundImage = CType(resources.GetObject("button_transferir.BackgroundImage"), System.Drawing.Image)
         Me.button_transferir.ButtonText = "Transferir"
@@ -195,7 +194,7 @@ Partial Class Form_transferir
         Me.button_transferir.ForeColor = System.Drawing.Color.White
         Me.button_transferir.IdleBorderThickness = 1
         Me.button_transferir.IdleCornerRadius = 20
-        Me.button_transferir.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_transferir.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_transferir.IdleForecolor = System.Drawing.Color.White
         Me.button_transferir.IdleLineColor = System.Drawing.Color.White
         Me.button_transferir.Location = New System.Drawing.Point(617, 463)
@@ -207,11 +206,10 @@ Partial Class Form_transferir
         '
         'TextBox_iban
         '
-        Me.TextBox_iban.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_iban.Location = New System.Drawing.Point(139, 266)
-        Me.TextBox_iban.Multiline = True
+        Me.TextBox_iban.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_iban.Location = New System.Drawing.Point(152, 264)
         Me.TextBox_iban.Name = "TextBox_iban"
-        Me.TextBox_iban.Size = New System.Drawing.Size(231, 29)
+        Me.TextBox_iban.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_iban.TabIndex = 39
         '
         'Label_iban
@@ -220,7 +218,7 @@ Partial Class Form_transferir
         Me.Label_iban.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_iban.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_iban.ForeColor = System.Drawing.Color.White
-        Me.Label_iban.Location = New System.Drawing.Point(62, 266)
+        Me.Label_iban.Location = New System.Drawing.Point(76, 266)
         Me.Label_iban.Name = "Label_iban"
         Me.Label_iban.Size = New System.Drawing.Size(71, 25)
         Me.Label_iban.TabIndex = 49
@@ -287,9 +285,6 @@ Partial Class Form_transferir
         Me.Label12.TabIndex = 43
         Me.Label12.Text = "Numero da conta :"
         '
-        'Timer1
-        '
-        '
         'BunifuTextbox2
         '
         Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -298,7 +293,7 @@ Partial Class Form_transferir
         Me.BunifuTextbox2.Enabled = False
         Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
         Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox2.Location = New System.Drawing.Point(18, 255)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(32, 255)
         Me.BunifuTextbox2.Name = "BunifuTextbox2"
         Me.BunifuTextbox2.Size = New System.Drawing.Size(382, 51)
         Me.BunifuTextbox2.TabIndex = 70
@@ -312,11 +307,14 @@ Partial Class Form_transferir
         Me.BunifuTextbox3.Enabled = False
         Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
         Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox3.Location = New System.Drawing.Point(18, 321)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(32, 321)
         Me.BunifuTextbox3.Name = "BunifuTextbox3"
         Me.BunifuTextbox3.Size = New System.Drawing.Size(447, 51)
         Me.BunifuTextbox3.TabIndex = 71
         Me.BunifuTextbox3.text = ""
+        '
+        'Timer1
+        '
         '
         'Form_transferir
         '

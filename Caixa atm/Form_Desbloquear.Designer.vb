@@ -91,9 +91,9 @@ Partial Class Form_Desbloquear
         '
         Me.button_desbloquear.ActiveBorderThickness = 1
         Me.button_desbloquear.ActiveCornerRadius = 20
-        Me.button_desbloquear.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_desbloquear.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_desbloquear.ActiveForecolor = System.Drawing.Color.White
-        Me.button_desbloquear.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_desbloquear.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_desbloquear.BackColor = System.Drawing.Color.Transparent
         Me.button_desbloquear.BackgroundImage = CType(resources.GetObject("button_desbloquear.BackgroundImage"), System.Drawing.Image)
         Me.button_desbloquear.ButtonText = "Desbloquear"
@@ -102,7 +102,7 @@ Partial Class Form_Desbloquear
         Me.button_desbloquear.ForeColor = System.Drawing.Color.White
         Me.button_desbloquear.IdleBorderThickness = 1
         Me.button_desbloquear.IdleCornerRadius = 20
-        Me.button_desbloquear.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_desbloquear.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_desbloquear.IdleForecolor = System.Drawing.Color.White
         Me.button_desbloquear.IdleLineColor = System.Drawing.Color.White
         Me.button_desbloquear.Location = New System.Drawing.Point(638, 478)

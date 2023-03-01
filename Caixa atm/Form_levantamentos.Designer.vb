@@ -144,9 +144,9 @@ Partial Class Form_levantamentos
         '
         Me.button_levantar.ActiveBorderThickness = 1
         Me.button_levantar.ActiveCornerRadius = 20
-        Me.button_levantar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_levantar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_levantar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_levantar.BackColor = System.Drawing.Color.Transparent
         Me.button_levantar.BackgroundImage = CType(resources.GetObject("button_levantar.BackgroundImage"), System.Drawing.Image)
         Me.button_levantar.ButtonText = "Levantar"
@@ -155,7 +155,7 @@ Partial Class Form_levantamentos
         Me.button_levantar.ForeColor = System.Drawing.Color.White
         Me.button_levantar.IdleBorderThickness = 1
         Me.button_levantar.IdleCornerRadius = 20
-        Me.button_levantar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_levantar.IdleForecolor = System.Drawing.Color.White
         Me.button_levantar.IdleLineColor = System.Drawing.Color.White
         Me.button_levantar.Location = New System.Drawing.Point(627, 462)
@@ -184,7 +184,7 @@ Partial Class Form_levantamentos
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(428, 260)
+        Me.Label8.Location = New System.Drawing.Point(443, 260)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(25, 28)
         Me.Label8.TabIndex = 32
@@ -205,10 +205,9 @@ Partial Class Form_levantamentos
         'TextBox_montante
         '
         Me.TextBox_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(185, 260)
-        Me.TextBox_montante.Multiline = True
+        Me.TextBox_montante.Location = New System.Drawing.Point(200, 258)
         Me.TextBox_montante.Name = "TextBox_montante"
-        Me.TextBox_montante.Size = New System.Drawing.Size(238, 28)
+        Me.TextBox_montante.Size = New System.Drawing.Size(238, 33)
         Me.TextBox_montante.TabIndex = 25
         '
         'Label_num
@@ -229,7 +228,7 @@ Partial Class Form_levantamentos
         Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(58, 261)
+        Me.Label_montante.Location = New System.Drawing.Point(73, 261)
         Me.Label_montante.Name = "Label_montante"
         Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 23
@@ -241,7 +240,7 @@ Partial Class Form_levantamentos
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(25, 118)
+        Me.Label7.Location = New System.Drawing.Point(28, 118)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(205, 25)
         Me.Label7.TabIndex = 26
@@ -267,7 +266,7 @@ Partial Class Form_levantamentos
         Me.BunifuTextbox2.Enabled = False
         Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
         Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox2.Location = New System.Drawing.Point(22, 249)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(37, 249)
         Me.BunifuTextbox2.Name = "BunifuTextbox2"
         Me.BunifuTextbox2.Size = New System.Drawing.Size(447, 51)
         Me.BunifuTextbox2.TabIndex = 69

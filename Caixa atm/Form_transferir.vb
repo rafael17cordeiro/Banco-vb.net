@@ -148,4 +148,8 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub TextBox_montante_TextChanged(sender As Object, e As EventArgs) Handles TextBox_montante.TextChanged
+
+    End Sub
 End Class

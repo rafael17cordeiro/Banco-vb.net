@@ -24,10 +24,10 @@ Partial Class Form_avisoSair
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_avisoSair))
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.PictureBox_logo = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label_sair = New System.Windows.Forms.Label()
-        Me.PictureBox_logo = New System.Windows.Forms.PictureBox()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,6 +49,18 @@ Partial Class Form_avisoSair
         Me.BunifuGradientPanel1.Quality = 10
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(637, 202)
         Me.BunifuGradientPanel1.TabIndex = 0
+        '
+        'PictureBox_logo
+        '
+        Me.PictureBox_logo.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox_logo.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.PictureBox_logo.Image = Global.Caixa_atm.My.Resources.Resources.earth__2_
+        Me.PictureBox_logo.Location = New System.Drawing.Point(542, 109)
+        Me.PictureBox_logo.Name = "PictureBox_logo"
+        Me.PictureBox_logo.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox_logo.TabIndex = 67
+        Me.PictureBox_logo.TabStop = False
         '
         'Label2
         '
@@ -84,23 +96,11 @@ Partial Class Form_avisoSair
         Me.Label_sair.BackColor = System.Drawing.Color.Transparent
         Me.Label_sair.Font = New System.Drawing.Font("Century Gothic", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_sair.ForeColor = System.Drawing.Color.White
-        Me.Label_sair.Location = New System.Drawing.Point(102, 35)
+        Me.Label_sair.Location = New System.Drawing.Point(91, 35)
         Me.Label_sair.Name = "Label_sair"
         Me.Label_sair.Size = New System.Drawing.Size(469, 44)
         Me.Label_sair.TabIndex = 30
         Me.Label_sair.Text = "Pretende sair do banco ?"
-        '
-        'PictureBox_logo
-        '
-        Me.PictureBox_logo.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox_logo.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.PictureBox_logo.Image = Global.Caixa_atm.My.Resources.Resources.earth__2_
-        Me.PictureBox_logo.Location = New System.Drawing.Point(542, 109)
-        Me.PictureBox_logo.Name = "PictureBox_logo"
-        Me.PictureBox_logo.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox_logo.TabIndex = 67
-        Me.PictureBox_logo.TabStop = False
         '
         'Form_avisoSair
         '

@@ -38,11 +38,11 @@ Partial Class Form_pagamentos
         Me.Label_montante = New System.Windows.Forms.Label()
         Me.Label_referencia = New System.Windows.Forms.Label()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -151,8 +151,8 @@ Partial Class Form_pagamentos
         '
         'TextBox_montante
         '
-        Me.TextBox_montante.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(192, 317)
+        Me.TextBox_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_montante.Location = New System.Drawing.Point(216, 317)
         Me.TextBox_montante.Multiline = True
         Me.TextBox_montante.Name = "TextBox_montante"
         Me.TextBox_montante.Size = New System.Drawing.Size(231, 25)
@@ -188,9 +188,9 @@ Partial Class Form_pagamentos
         '
         Me.button_pagar.ActiveBorderThickness = 1
         Me.button_pagar.ActiveCornerRadius = 20
-        Me.button_pagar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_pagar.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_pagar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_pagar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_pagar.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_pagar.BackColor = System.Drawing.Color.Transparent
         Me.button_pagar.BackgroundImage = CType(resources.GetObject("button_pagar.BackgroundImage"), System.Drawing.Image)
         Me.button_pagar.ButtonText = "Pagar"
@@ -199,7 +199,7 @@ Partial Class Form_pagamentos
         Me.button_pagar.ForeColor = System.Drawing.Color.White
         Me.button_pagar.IdleBorderThickness = 1
         Me.button_pagar.IdleCornerRadius = 20
-        Me.button_pagar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_pagar.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_pagar.IdleForecolor = System.Drawing.Color.White
         Me.button_pagar.IdleLineColor = System.Drawing.Color.White
         Me.button_pagar.Location = New System.Drawing.Point(624, 473)
@@ -211,8 +211,8 @@ Partial Class Form_pagamentos
         '
         'TextBox_referencia
         '
-        Me.TextBox_referencia.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_referencia.Location = New System.Drawing.Point(190, 253)
+        Me.TextBox_referencia.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_referencia.Location = New System.Drawing.Point(214, 253)
         Me.TextBox_referencia.Multiline = True
         Me.TextBox_referencia.Name = "TextBox_referencia"
         Me.TextBox_referencia.Size = New System.Drawing.Size(231, 30)
@@ -224,7 +224,7 @@ Partial Class Form_pagamentos
         Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(66, 317)
+        Me.Label_montante.Location = New System.Drawing.Point(90, 317)
         Me.Label_montante.Name = "Label_montante"
         Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 49
@@ -236,7 +236,7 @@ Partial Class Form_pagamentos
         Me.Label_referencia.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_referencia.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_referencia.ForeColor = System.Drawing.Color.White
-        Me.Label_referencia.Location = New System.Drawing.Point(59, 254)
+        Me.Label_referencia.Location = New System.Drawing.Point(83, 254)
         Me.Label_referencia.Name = "Label_referencia"
         Me.Label_referencia.Size = New System.Drawing.Size(133, 25)
         Me.Label_referencia.TabIndex = 49
@@ -254,6 +254,34 @@ Partial Class Form_pagamentos
         Me.BunifuTextbox1.Size = New System.Drawing.Size(243, 42)
         Me.BunifuTextbox1.TabIndex = 56
         Me.BunifuTextbox1.text = "Bunifu TextBox"
+        '
+        'BunifuTextbox2
+        '
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(43, 241)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(428, 51)
+        Me.BunifuTextbox2.TabIndex = 70
+        Me.BunifuTextbox2.text = ""
+        '
+        'BunifuTextbox3
+        '
+        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox3.Enabled = False
+        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(43, 304)
+        Me.BunifuTextbox3.Name = "BunifuTextbox3"
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(430, 51)
+        Me.BunifuTextbox3.TabIndex = 71
+        Me.BunifuTextbox3.text = ""
         '
         'Label1
         '
@@ -281,34 +309,6 @@ Partial Class Form_pagamentos
         '
         'Timer1
         '
-        '
-        'BunifuTextbox2
-        '
-        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuTextbox2.Enabled = False
-        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
-        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox2.Location = New System.Drawing.Point(19, 241)
-        Me.BunifuTextbox2.Name = "BunifuTextbox2"
-        Me.BunifuTextbox2.Size = New System.Drawing.Size(428, 51)
-        Me.BunifuTextbox2.TabIndex = 70
-        Me.BunifuTextbox2.text = ""
-        '
-        'BunifuTextbox3
-        '
-        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuTextbox3.Enabled = False
-        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
-        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox3.Location = New System.Drawing.Point(19, 304)
-        Me.BunifuTextbox3.Name = "BunifuTextbox3"
-        Me.BunifuTextbox3.Size = New System.Drawing.Size(430, 51)
-        Me.BunifuTextbox3.TabIndex = 71
-        Me.BunifuTextbox3.text = ""
         '
         'Form_pagamentos
         '

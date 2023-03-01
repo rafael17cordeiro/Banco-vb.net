@@ -192,22 +192,22 @@ Partial Class Form_login
         '
         Me.TextBox_pin.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.TextBox_pin.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBox_pin.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_pin.ForeColor = System.Drawing.Color.White
         Me.TextBox_pin.Location = New System.Drawing.Point(92, 299)
         Me.TextBox_pin.Name = "TextBox_pin"
         Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.TextBox_pin.Size = New System.Drawing.Size(173, 34)
+        Me.TextBox_pin.Size = New System.Drawing.Size(173, 33)
         Me.TextBox_pin.TabIndex = 24
         '
         'TextBox_user
         '
         Me.TextBox_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.TextBox_user.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_user.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_user.ForeColor = System.Drawing.Color.White
         Me.TextBox_user.Location = New System.Drawing.Point(92, 257)
         Me.TextBox_user.Name = "TextBox_user"
-        Me.TextBox_user.Size = New System.Drawing.Size(173, 34)
+        Me.TextBox_user.Size = New System.Drawing.Size(173, 33)
         Me.TextBox_user.TabIndex = 23
         '
         'PictureBox_pin

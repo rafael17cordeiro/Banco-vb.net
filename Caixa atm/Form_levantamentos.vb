@@ -66,39 +66,30 @@ Public Class Form_levantamentos
             Me.Close()
             Form_opçoes.Show()
         ElseIf result = DialogResult.No Then
-            ' Code to be executed if "No" button is clicked
+
         End If
     End Sub
 
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
-        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+        BunifuProgressBar1.Value += 1
+        If BunifuProgressBar1.Value = 100 Then
             Timer1.Stop()
-            If Timer1.Enabled = False Then 'execute code when the timer stops
-                ' Definir as notas disponíveis
-
-
-                ' Obter o montante solicitado pelo utilizador
+            If Timer1.Enabled = False Then
                 Dim montante As Integer = Val(TextBox_montante.Text)
-
-                ' Verificar se o montante é válido
-                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 And montante < 235 Then
+                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 And Val(TextBox_montante.Text) < 250 Then
                     MsgBox("Montante invalido")
                     BunifuProgressBar1.Value = 0
                 Else
-                    ' Calcular quantas notas de cada valor serão necessárias
+
                     Dim notasRecebidas() As Integer = {0, 0, 0, 0, 0}
-                    Dim montanteRestante As Integer = montante
                     For i As Integer = 0 To notas.Length - 1
-                        While montanteRestante >= notas(i) AndAlso notas(i) <= notas(i)
+                        While montante >= notas(i) And notas(i) <= notas(i)
                             notasRecebidas(i) += 1
-                            montanteRestante -= notas(i)
+                            montante -= notas(i)
                         End While
                     Next
-
-                    ' Exibir as notas que o utilizador receberá
                     Dim mensagem As String = "Notas recebidas:" & vbCrLf
                     For i As Integer = 0 To notasRecebidas.Length - 1
                         If notasRecebidas(i) > 0 Then
@@ -106,8 +97,6 @@ Public Class Form_levantamentos
                         End If
                     Next
                     MsgBox(mensagem)
-
-                    ' Atualizar o saldo do cliente e fechar o formulário
                     clientes(Form_login.num_ut, 0) -= Val(TextBox_montante.Text)
                     MsgBox("Dinheiro levantado com sucesso!")
                     Me.Close()
@@ -124,5 +113,7 @@ Public Class Form_levantamentos
         End If
     End Sub
 
+    Private Sub BunifuTextbox2_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox2.OnTextChange
 
+    End Sub
 End Class

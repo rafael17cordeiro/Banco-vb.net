@@ -57,12 +57,11 @@ Partial Class Form_adminPin
         '
         'TextBox_pin
         '
-        Me.TextBox_pin.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_pin.Location = New System.Drawing.Point(193, 285)
-        Me.TextBox_pin.Multiline = True
+        Me.TextBox_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_pin.Location = New System.Drawing.Point(193, 282)
         Me.TextBox_pin.Name = "TextBox_pin"
-        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox_pin.Size = New System.Drawing.Size(231, 28)
+        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.TextBox_pin.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_pin.TabIndex = 51
         '
         'button_cancelar
@@ -107,9 +106,9 @@ Partial Class Form_adminPin
         '
         Me.button_alterar.ActiveBorderThickness = 1
         Me.button_alterar.ActiveCornerRadius = 20
-        Me.button_alterar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_alterar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.BackColor = System.Drawing.Color.Transparent
         Me.button_alterar.BackgroundImage = CType(resources.GetObject("button_alterar.BackgroundImage"), System.Drawing.Image)
         Me.button_alterar.ButtonText = "Alterar"
@@ -118,7 +117,7 @@ Partial Class Form_adminPin
         Me.button_alterar.ForeColor = System.Drawing.Color.White
         Me.button_alterar.IdleBorderThickness = 1
         Me.button_alterar.IdleCornerRadius = 20
-        Me.button_alterar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.IdleForecolor = System.Drawing.Color.White
         Me.button_alterar.IdleLineColor = System.Drawing.Color.White
         Me.button_alterar.Location = New System.Drawing.Point(635, 472)
@@ -130,11 +129,10 @@ Partial Class Form_adminPin
         '
         'TextBox_num
         '
-        Me.TextBox_num.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_num.Location = New System.Drawing.Point(230, 208)
-        Me.TextBox_num.Multiline = True
+        Me.TextBox_num.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_num.Location = New System.Drawing.Point(229, 208)
         Me.TextBox_num.Name = "TextBox_num"
-        Me.TextBox_num.Size = New System.Drawing.Size(231, 30)
+        Me.TextBox_num.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_num.TabIndex = 39
         '
         'Label13
@@ -210,12 +208,11 @@ Partial Class Form_adminPin
         '
         'TextBox_confirmar
         '
-        Me.TextBox_confirmar.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_confirmar.Location = New System.Drawing.Point(213, 361)
-        Me.TextBox_confirmar.Multiline = True
+        Me.TextBox_confirmar.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_confirmar.Location = New System.Drawing.Point(210, 358)
         Me.TextBox_confirmar.Name = "TextBox_confirmar"
-        Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox_confirmar.Size = New System.Drawing.Size(231, 27)
+        Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.TextBox_confirmar.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_confirmar.TabIndex = 65
         '
         'Label2

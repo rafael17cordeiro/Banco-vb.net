@@ -144,9 +144,9 @@ Partial Class Form_deposito
         '
         Me.BunifuThinButton22.ActiveBorderThickness = 1
         Me.BunifuThinButton22.ActiveCornerRadius = 20
-        Me.BunifuThinButton22.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.BunifuThinButton22.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuThinButton22.ActiveForecolor = System.Drawing.Color.White
-        Me.BunifuThinButton22.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.BunifuThinButton22.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuThinButton22.BackColor = System.Drawing.Color.Transparent
         Me.BunifuThinButton22.BackgroundImage = CType(resources.GetObject("BunifuThinButton22.BackgroundImage"), System.Drawing.Image)
         Me.BunifuThinButton22.ButtonText = "Depositar"
@@ -155,7 +155,7 @@ Partial Class Form_deposito
         Me.BunifuThinButton22.ForeColor = System.Drawing.Color.White
         Me.BunifuThinButton22.IdleBorderThickness = 1
         Me.BunifuThinButton22.IdleCornerRadius = 20
-        Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.White
         Me.BunifuThinButton22.Location = New System.Drawing.Point(622, 442)
@@ -205,10 +205,9 @@ Partial Class Form_deposito
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(190, 251)
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Location = New System.Drawing.Point(191, 249)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(232, 28)
+        Me.TextBox1.Size = New System.Drawing.Size(232, 33)
         Me.TextBox1.TabIndex = 25
         '
         'Label_conta

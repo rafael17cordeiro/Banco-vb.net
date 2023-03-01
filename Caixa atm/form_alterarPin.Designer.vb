@@ -41,9 +41,9 @@ Partial Class form_alterarPin
         Me.Label5 = New System.Windows.Forms.Label()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -124,9 +124,9 @@ Partial Class form_alterarPin
         '
         Me.button_alterar.ActiveBorderThickness = 1
         Me.button_alterar.ActiveCornerRadius = 20
-        Me.button_alterar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.ActiveFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_alterar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.ActiveLineColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.BackColor = System.Drawing.Color.Transparent
         Me.button_alterar.BackgroundImage = CType(resources.GetObject("button_alterar.BackgroundImage"), System.Drawing.Image)
         Me.button_alterar.ButtonText = "Alterar"
@@ -135,7 +135,7 @@ Partial Class form_alterarPin
         Me.button_alterar.ForeColor = System.Drawing.Color.White
         Me.button_alterar.IdleBorderThickness = 1
         Me.button_alterar.IdleCornerRadius = 20
-        Me.button_alterar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_alterar.IdleFillColor = System.Drawing.Color.MediumSeaGreen
         Me.button_alterar.IdleForecolor = System.Drawing.Color.White
         Me.button_alterar.IdleLineColor = System.Drawing.Color.White
         Me.button_alterar.Location = New System.Drawing.Point(625, 452)
@@ -289,9 +289,6 @@ Partial Class form_alterarPin
         Me.BunifuProgressBar1.TabIndex = 67
         Me.BunifuProgressBar1.Value = 0
         '
-        'Timer1
-        '
-        '
         'BunifuTextbox2
         '
         Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -319,6 +316,9 @@ Partial Class form_alterarPin
         Me.BunifuTextbox3.Size = New System.Drawing.Size(445, 51)
         Me.BunifuTextbox3.TabIndex = 72
         Me.BunifuTextbox3.text = ""
+        '
+        'Timer1
+        '
         '
         'form_alterarPin
         '
