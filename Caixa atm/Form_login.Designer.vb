@@ -196,7 +196,7 @@ Partial Class Form_login
         Me.TextBox_pin.ForeColor = System.Drawing.Color.White
         Me.TextBox_pin.Location = New System.Drawing.Point(92, 299)
         Me.TextBox_pin.Name = "TextBox_pin"
-        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox_pin.Size = New System.Drawing.Size(173, 34)
         Me.TextBox_pin.TabIndex = 24
         '

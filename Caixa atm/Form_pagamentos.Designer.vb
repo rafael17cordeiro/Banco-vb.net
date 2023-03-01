@@ -37,12 +37,12 @@ Partial Class Form_pagamentos
         Me.TextBox_referencia = New System.Windows.Forms.TextBox()
         Me.Label_montante = New System.Windows.Forms.Label()
         Me.Label_referencia = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.BunifuThinButton24 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -108,13 +108,13 @@ Partial Class Form_pagamentos
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_referencia)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_montante)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_referencia)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label11)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_saldo)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_num)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label12)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton24)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox3)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -152,9 +152,10 @@ Partial Class Form_pagamentos
         'TextBox_montante
         '
         Me.TextBox_montante.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(182, 315)
+        Me.TextBox_montante.Location = New System.Drawing.Point(192, 317)
+        Me.TextBox_montante.Multiline = True
         Me.TextBox_montante.Name = "TextBox_montante"
-        Me.TextBox_montante.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_montante.Size = New System.Drawing.Size(231, 25)
         Me.TextBox_montante.TabIndex = 51
         '
         'button_cancelar
@@ -211,59 +212,35 @@ Partial Class Form_pagamentos
         'TextBox_referencia
         '
         Me.TextBox_referencia.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_referencia.Location = New System.Drawing.Point(185, 248)
+        Me.TextBox_referencia.Location = New System.Drawing.Point(190, 253)
+        Me.TextBox_referencia.Multiline = True
         Me.TextBox_referencia.Name = "TextBox_referencia"
-        Me.TextBox_referencia.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_referencia.Size = New System.Drawing.Size(231, 30)
         Me.TextBox_referencia.TabIndex = 39
         '
         'Label_montante
         '
         Me.Label_montante.AutoSize = True
-        Me.Label_montante.BackColor = System.Drawing.Color.Black
+        Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(55, 315)
+        Me.Label_montante.Location = New System.Drawing.Point(66, 317)
         Me.Label_montante.Name = "Label_montante"
-        Me.Label_montante.Size = New System.Drawing.Size(109, 25)
+        Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 49
-        Me.Label_montante.Text = "Montante"
+        Me.Label_montante.Text = "Montante :"
         '
         'Label_referencia
         '
         Me.Label_referencia.AutoSize = True
-        Me.Label_referencia.BackColor = System.Drawing.Color.Black
+        Me.Label_referencia.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_referencia.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_referencia.ForeColor = System.Drawing.Color.White
-        Me.Label_referencia.Location = New System.Drawing.Point(55, 255)
+        Me.Label_referencia.Location = New System.Drawing.Point(59, 254)
         Me.Label_referencia.Name = "Label_referencia"
-        Me.Label_referencia.Size = New System.Drawing.Size(121, 25)
+        Me.Label_referencia.Size = New System.Drawing.Size(133, 25)
         Me.Label_referencia.TabIndex = 49
-        Me.Label_referencia.Text = "Referência"
-        '
-        'BunifuThinButton23
-        '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(25, 235)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton23.TabIndex = 58
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_referencia.Text = "Referência :"
         '
         'BunifuTextbox1
         '
@@ -277,31 +254,6 @@ Partial Class Form_pagamentos
         Me.BunifuTextbox1.Size = New System.Drawing.Size(243, 42)
         Me.BunifuTextbox1.TabIndex = 56
         Me.BunifuTextbox1.text = "Bunifu TextBox"
-        '
-        'BunifuThinButton24
-        '
-        Me.BunifuThinButton24.ActiveBorderThickness = 1
-        Me.BunifuThinButton24.ActiveCornerRadius = 50
-        Me.BunifuThinButton24.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton24.BackgroundImage = CType(resources.GetObject("BunifuThinButton24.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton24.ButtonText = ""
-        Me.BunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton24.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton24.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleBorderThickness = 1
-        Me.BunifuThinButton24.IdleCornerRadius = 50
-        Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(26, 298)
-        Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton24.Name = "BunifuThinButton24"
-        Me.BunifuThinButton24.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton24.TabIndex = 59
-        Me.BunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
@@ -329,6 +281,34 @@ Partial Class Form_pagamentos
         '
         'Timer1
         '
+        '
+        'BunifuTextbox2
+        '
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(19, 241)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(428, 51)
+        Me.BunifuTextbox2.TabIndex = 70
+        Me.BunifuTextbox2.text = ""
+        '
+        'BunifuTextbox3
+        '
+        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox3.Enabled = False
+        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(19, 304)
+        Me.BunifuTextbox3.Name = "BunifuTextbox3"
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(430, 51)
+        Me.BunifuTextbox3.TabIndex = 71
+        Me.BunifuTextbox3.text = ""
         '
         'Form_pagamentos
         '
@@ -362,13 +342,13 @@ Partial Class Form_pagamentos
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents button_pagar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents TextBox_referencia As TextBox
-    Friend WithEvents BunifuThinButton24 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents Label_referencia As Label
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label_montante As Label
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents BunifuTextbox3 As Bunifu.Framework.UI.BunifuTextbox
 End Class

@@ -117,7 +117,7 @@
                     End If
                 Next
 
-                If checker_ut = False Or TextBox_iban.Text = "" Then
+                If checker_ut = False Or TextBox_iban.Text = "" Or iban = Form_login.num_ut Then
                     MsgBox("O numero de iban inserido não é válido")
                     BunifuProgressBar1.Value = 0
                 ElseIf montante < 0 Then

@@ -39,7 +39,7 @@ Partial Class Form_deposito
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +80,7 @@ Partial Class Form_deposito
         Me.BunifuGradientPanel1.Controls.Add(Me.Label1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label7)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label6)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox2)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -181,10 +181,10 @@ Partial Class Form_deposito
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Black
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(412, 253)
+        Me.Label8.Location = New System.Drawing.Point(433, 252)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(25, 28)
         Me.Label8.TabIndex = 32
@@ -205,9 +205,10 @@ Partial Class Form_deposito
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(162, 248)
+        Me.TextBox1.Location = New System.Drawing.Point(190, 251)
+        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(232, 33)
+        Me.TextBox1.Size = New System.Drawing.Size(232, 28)
         Me.TextBox1.TabIndex = 25
         '
         'Label_conta
@@ -225,10 +226,10 @@ Partial Class Form_deposito
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Black
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(32, 252)
+        Me.Label1.Location = New System.Drawing.Point(66, 252)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 25)
         Me.Label1.TabIndex = 23
@@ -258,30 +259,19 @@ Partial Class Form_deposito
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Saldo disponivel :"
         '
-        'BunifuThinButton23
+        'BunifuTextbox2
         '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(10, 235)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(436, 59)
-        Me.BunifuThinButton23.TabIndex = 59
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(19, 240)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(447, 51)
+        Me.BunifuTextbox2.TabIndex = 68
+        Me.BunifuTextbox2.text = ""
         '
         'Timer1
         '
@@ -309,7 +299,6 @@ Partial Class Form_deposito
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label_saldo As Label
     Friend WithEvents Label_conta As Label
@@ -319,10 +308,11 @@ Partial Class Form_deposito
     Friend WithEvents Label8 As Label
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuThinButton22 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents TextBox1 As TextBox
 End Class

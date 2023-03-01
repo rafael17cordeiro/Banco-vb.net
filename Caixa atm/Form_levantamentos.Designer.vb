@@ -30,6 +30,7 @@ Partial Class Form_levantamentos
         Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.button_levantar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label_saldo = New System.Windows.Forms.Label()
@@ -38,9 +39,8 @@ Partial Class Form_levantamentos
         Me.Label_montante = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.button_levantar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -80,7 +80,7 @@ Partial Class Form_levantamentos
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_montante)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label7)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label6)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox2)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -140,6 +140,31 @@ Partial Class Form_levantamentos
         Me.button_cancelar.TabIndex = 61
         Me.button_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'button_levantar
+        '
+        Me.button_levantar.ActiveBorderThickness = 1
+        Me.button_levantar.ActiveCornerRadius = 20
+        Me.button_levantar.ActiveFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.ActiveForecolor = System.Drawing.Color.White
+        Me.button_levantar.ActiveLineColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.BackColor = System.Drawing.Color.Transparent
+        Me.button_levantar.BackgroundImage = CType(resources.GetObject("button_levantar.BackgroundImage"), System.Drawing.Image)
+        Me.button_levantar.ButtonText = "Levantar"
+        Me.button_levantar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.button_levantar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.button_levantar.ForeColor = System.Drawing.Color.White
+        Me.button_levantar.IdleBorderThickness = 1
+        Me.button_levantar.IdleCornerRadius = 20
+        Me.button_levantar.IdleFillColor = System.Drawing.Color.ForestGreen
+        Me.button_levantar.IdleForecolor = System.Drawing.Color.White
+        Me.button_levantar.IdleLineColor = System.Drawing.Color.White
+        Me.button_levantar.Location = New System.Drawing.Point(627, 462)
+        Me.button_levantar.Margin = New System.Windows.Forms.Padding(5)
+        Me.button_levantar.Name = "button_levantar"
+        Me.button_levantar.Size = New System.Drawing.Size(169, 46)
+        Me.button_levantar.TabIndex = 60
+        Me.button_levantar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'BunifuTextbox1
         '
         Me.BunifuTextbox1.BackColor = System.Drawing.Color.Silver
@@ -156,10 +181,10 @@ Partial Class Form_levantamentos
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Black
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(412, 253)
+        Me.Label8.Location = New System.Drawing.Point(428, 260)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(25, 28)
         Me.Label8.TabIndex = 32
@@ -180,9 +205,10 @@ Partial Class Form_levantamentos
         'TextBox_montante
         '
         Me.TextBox_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(162, 249)
+        Me.TextBox_montante.Location = New System.Drawing.Point(185, 260)
+        Me.TextBox_montante.Multiline = True
         Me.TextBox_montante.Name = "TextBox_montante"
-        Me.TextBox_montante.Size = New System.Drawing.Size(238, 33)
+        Me.TextBox_montante.Size = New System.Drawing.Size(238, 28)
         Me.TextBox_montante.TabIndex = 25
         '
         'Label_num
@@ -200,10 +226,10 @@ Partial Class Form_levantamentos
         'Label_montante
         '
         Me.Label_montante.AutoSize = True
-        Me.Label_montante.BackColor = System.Drawing.Color.Black
+        Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(32, 252)
+        Me.Label_montante.Location = New System.Drawing.Point(58, 261)
         Me.Label_montante.Name = "Label_montante"
         Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 23
@@ -233,58 +259,22 @@ Partial Class Form_levantamentos
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Saldo disponivel :"
         '
-        'BunifuThinButton23
+        'BunifuTextbox2
         '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(10, 235)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(442, 62)
-        Me.BunifuThinButton23.TabIndex = 59
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(22, 249)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(447, 51)
+        Me.BunifuTextbox2.TabIndex = 69
+        Me.BunifuTextbox2.text = ""
         '
         'Timer1
         '
-        '
-        'button_levantar
-        '
-        Me.button_levantar.ActiveBorderThickness = 1
-        Me.button_levantar.ActiveCornerRadius = 20
-        Me.button_levantar.ActiveFillColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.ActiveForecolor = System.Drawing.Color.White
-        Me.button_levantar.ActiveLineColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.BackColor = System.Drawing.Color.Transparent
-        Me.button_levantar.BackgroundImage = CType(resources.GetObject("button_levantar.BackgroundImage"), System.Drawing.Image)
-        Me.button_levantar.ButtonText = "Levantar"
-        Me.button_levantar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.button_levantar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button_levantar.ForeColor = System.Drawing.Color.White
-        Me.button_levantar.IdleBorderThickness = 1
-        Me.button_levantar.IdleCornerRadius = 20
-        Me.button_levantar.IdleFillColor = System.Drawing.Color.ForestGreen
-        Me.button_levantar.IdleForecolor = System.Drawing.Color.White
-        Me.button_levantar.IdleLineColor = System.Drawing.Color.White
-        Me.button_levantar.Location = New System.Drawing.Point(627, 462)
-        Me.button_levantar.Margin = New System.Windows.Forms.Padding(5)
-        Me.button_levantar.Name = "button_levantar"
-        Me.button_levantar.Size = New System.Drawing.Size(169, 46)
-        Me.button_levantar.TabIndex = 60
-        Me.button_levantar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form_levantamentos
         '
@@ -313,6 +303,7 @@ Partial Class Form_levantamentos
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents button_levantar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label_saldo As Label
@@ -321,8 +312,7 @@ Partial Class Form_levantamentos
     Friend WithEvents Label_montante As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents button_levantar As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
 End Class

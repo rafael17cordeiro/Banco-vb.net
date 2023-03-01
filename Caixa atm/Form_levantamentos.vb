@@ -84,7 +84,7 @@ Public Class Form_levantamentos
                 Dim montante As Integer = Val(TextBox_montante.Text)
 
                 ' Verificar se o montante é válido
-                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 Then
+                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 And montante < 235 Then
                     MsgBox("Montante invalido")
                     BunifuProgressBar1.Value = 0
                 Else
@@ -123,4 +123,6 @@ Public Class Form_levantamentos
             e.Handled = True
         End If
     End Sub
+
+
 End Class

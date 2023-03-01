@@ -124,6 +124,7 @@ Public Class Form_deposito
             e.Handled = True
         End If
     End Sub
+
     Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
     End Sub

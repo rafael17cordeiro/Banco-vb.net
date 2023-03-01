@@ -1,4 +1,63 @@
 ﻿Public Class Form_adminPin
+
+
+
+    Private Sub FormAdmPin_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = 13 Then
+            Dim num_ut As Integer
+            Dim checker_ut As Boolean = False
+            Dim pin As Integer = Val(TextBox_pin.Text)
+
+            num_ut = Val(TextBox_num.Text)
+            For i = 0 To LIM
+                If num_ut = i Then
+                    checker_ut = True
+                    Exit For
+                Else
+                    checker_ut = False
+                End If
+            Next
+
+            If checker_ut = False Or TextBox_num.Text = "" Or num_ut = 0 Then
+                MsgBox("Numero de utilizador ivalido")
+                TextBox_num.Text = ""
+                TextBox_pin.Text = ""
+                TextBox_confirmar.Text = ""
+            ElseIf checker_ut = True Then
+
+                If Val(TextBox_pin.Text) <> Val(TextBox_confirmar.Text) Then
+                    MsgBox("Os pins inseridos não são iguais")
+                ElseIf pin = Form_login.pin Then
+                    MsgBox("O novo pin não pode ser o pin atual")
+                    TextBox_pin.Text = ""
+                    TextBox_confirmar.Text = ""
+
+                Else
+
+                    clientes(num_ut, 1) = pin 'probs reis que ajudou 
+
+
+                    MsgBox("Multibanco" & vbNewLine & "--------------------------------" & vbNewLine & "Pin alterado com sucesso")
+                    Me.Close()
+                    Form_admin.Show()
+                End If
+
+            End If
+
+
+        End If
+
+        If e.KeyCode = 27 Then
+            Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do alterar pin?", "Sair de deposito", MessageBoxButtons.YesNo)
+            If result = DialogResult.Yes Then
+                Me.Close()
+                Form_admin.Show()
+            ElseIf result = DialogResult.No Then
+
+            End If
+
+        End If
+    End Sub
     Private Function RoundedRectangle(rect As RectangleF, diam As Single) As Drawing2D.GraphicsPath
         Dim path As New Drawing2D.GraphicsPath
         path.AddArc(rect.Left, rect.Top, diam, diam, 180, 90)
@@ -59,7 +118,7 @@
 
             Else
 
-                clientes(num_ut, 1) = pin 'probs reis que ajudou 
+                clientes(num_ut, 1) = pin
 
 
                 MsgBox("Multibanco" & vbNewLine & "--------------------------------" & vbNewLine & "Pin alterado com sucesso")
@@ -72,8 +131,14 @@
     End Sub
 
     Private Sub BunifuThinButton25_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        Me.Close()
-        Form_admin.Show()
+        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do Desbloquear?", "Sair de deposito", MessageBoxButtons.YesNo)
+        If result = DialogResult.Yes Then
+            Me.Close()
+            Form_admin.Show()
+        ElseIf result = DialogResult.No Then
+
+        End If
+
 
     End Sub
 
@@ -81,5 +146,9 @@
         If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
+
     End Sub
 End Class

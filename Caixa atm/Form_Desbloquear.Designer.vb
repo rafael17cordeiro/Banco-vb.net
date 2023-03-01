@@ -31,9 +31,9 @@ Partial Class Form_Desbloquear
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label_num = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -115,9 +115,10 @@ Partial Class Form_Desbloquear
         'TextBox_num
         '
         Me.TextBox_num.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_num.Location = New System.Drawing.Point(195, 205)
+        Me.TextBox_num.Location = New System.Drawing.Point(205, 209)
+        Me.TextBox_num.Multiline = True
         Me.TextBox_num.Name = "TextBox_num"
-        Me.TextBox_num.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_num.Size = New System.Drawing.Size(231, 28)
         Me.TextBox_num.TabIndex = 39
         '
         'Label10
@@ -141,39 +142,14 @@ Partial Class Form_Desbloquear
         'Label_num
         '
         Me.Label_num.AutoSize = True
-        Me.Label_num.BackColor = System.Drawing.Color.Black
+        Me.Label_num.BackColor = System.Drawing.Color.Transparent
         Me.Label_num.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_num.ForeColor = System.Drawing.Color.White
-        Me.Label_num.Location = New System.Drawing.Point(54, 210)
+        Me.Label_num.Location = New System.Drawing.Point(61, 211)
         Me.Label_num.Name = "Label_num"
-        Me.Label_num.Size = New System.Drawing.Size(135, 25)
+        Me.Label_num.Size = New System.Drawing.Size(147, 25)
         Me.Label_num.TabIndex = 49
-        Me.Label_num.Text = "Nº da conta"
-        '
-        'BunifuThinButton23
-        '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(35, 192)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton23.TabIndex = 58
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_num.Text = "Nº da conta :"
         '
         'BunifuTextbox1
         '
@@ -199,8 +175,8 @@ Partial Class Form_Desbloquear
         Me.BunifuGradientPanel1.Controls.Add(Me.button_desbloquear)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_num)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_num)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox1)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox3)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -210,6 +186,20 @@ Partial Class Form_Desbloquear
         Me.BunifuGradientPanel1.Quality = 10
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(823, 538)
         Me.BunifuGradientPanel1.TabIndex = 64
+        '
+        'BunifuTextbox3
+        '
+        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox3.Enabled = False
+        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(25, 198)
+        Me.BunifuTextbox3.Name = "BunifuTextbox3"
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(427, 51)
+        Me.BunifuTextbox3.TabIndex = 74
+        Me.BunifuTextbox3.text = ""
         '
         'Form_Desbloquear
         '
@@ -241,7 +231,7 @@ Partial Class Form_Desbloquear
     Friend WithEvents Label10 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label_num As Label
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents BunifuTextbox3 As Bunifu.Framework.UI.BunifuTextbox
 End Class

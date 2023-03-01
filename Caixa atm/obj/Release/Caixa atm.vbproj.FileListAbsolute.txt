@@ -27,3 +27,32 @@ C:\Users\rafae\OneDrive\Ambiente de Trabalho\Banco\Caixa atm\obj\Release\Caixa a
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\Banco\Caixa atm\obj\Release\Caixa atm.exe
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\Banco\Caixa atm\obj\Release\Caixa atm.xml
 C:\Users\rafae\OneDrive\Ambiente de Trabalho\Banco\Caixa atm\obj\Release\Caixa atm.pdb
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\bin\Release\Caixa atm.exe.config
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\bin\Release\Caixa atm.exe
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\bin\Release\Caixa atm.pdb
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\bin\Release\Caixa atm.xml
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.vbproj.AssemblyReference.cache
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.vbproj.SuggestedBindingRedirects.cache
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_admin.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_adminPin.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.form_alterarPin.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_avisoSair.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_Desbloquear.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_levantamentos.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_login.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form2.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_opçoes.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_deposito.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_pagamentos.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_sair.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_saldo.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_sobre.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Form_transferir.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa_atm.Resources.resources
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.vbproj.GenerateResource.cache
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.vbproj.CoreCompileInputs.cache
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.vbproj.CopyComplete
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.exe
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.xml
+C:\Users\rafae\OneDrive\Ambiente de Trabalho\banco vb.net\Caixa atm\obj\Release\Caixa atm.pdb

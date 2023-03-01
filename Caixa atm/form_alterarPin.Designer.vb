@@ -31,9 +31,7 @@ Partial Class form_alterarPin
         Me.Label_confirmar = New System.Windows.Forms.Label()
         Me.button_alterar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.TextBox_pin = New System.Windows.Forms.TextBox()
-        Me.BunifuThinButton24 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Label_pin = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label_saldo = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,6 +42,8 @@ Partial Class form_alterarPin
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -51,7 +51,7 @@ Partial Class form_alterarPin
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Black
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(419, 331)
@@ -75,10 +75,11 @@ Partial Class form_alterarPin
         'TextBox_confirmar
         '
         Me.TextBox_confirmar.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_confirmar.Location = New System.Drawing.Point(179, 329)
+        Me.TextBox_confirmar.Location = New System.Drawing.Point(178, 331)
+        Me.TextBox_confirmar.Multiline = True
         Me.TextBox_confirmar.Name = "TextBox_confirmar"
         Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox_confirmar.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_confirmar.Size = New System.Drawing.Size(231, 30)
         Me.TextBox_confirmar.TabIndex = 51
         '
         'button_cancelar
@@ -110,10 +111,10 @@ Partial Class form_alterarPin
         'Label_confirmar
         '
         Me.Label_confirmar.AutoSize = True
-        Me.Label_confirmar.BackColor = System.Drawing.Color.Black
+        Me.Label_confirmar.BackColor = System.Drawing.Color.Transparent
         Me.Label_confirmar.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_confirmar.ForeColor = System.Drawing.Color.White
-        Me.Label_confirmar.Location = New System.Drawing.Point(41, 334)
+        Me.Label_confirmar.Location = New System.Drawing.Point(56, 334)
         Me.Label_confirmar.Name = "Label_confirmar"
         Me.Label_confirmar.Size = New System.Drawing.Size(113, 25)
         Me.Label_confirmar.TabIndex = 37
@@ -147,73 +148,24 @@ Partial Class form_alterarPin
         'TextBox_pin
         '
         Me.TextBox_pin.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_pin.Location = New System.Drawing.Point(182, 262)
+        Me.TextBox_pin.Location = New System.Drawing.Point(119, 264)
+        Me.TextBox_pin.Multiline = True
         Me.TextBox_pin.Name = "TextBox_pin"
         Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox_pin.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_pin.Size = New System.Drawing.Size(231, 30)
         Me.TextBox_pin.TabIndex = 39
-        '
-        'BunifuThinButton24
-        '
-        Me.BunifuThinButton24.ActiveBorderThickness = 1
-        Me.BunifuThinButton24.ActiveCornerRadius = 50
-        Me.BunifuThinButton24.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton24.BackgroundImage = CType(resources.GetObject("BunifuThinButton24.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton24.ButtonText = ""
-        Me.BunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton24.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton24.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleBorderThickness = 1
-        Me.BunifuThinButton24.IdleCornerRadius = 50
-        Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(23, 312)
-        Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton24.Name = "BunifuThinButton24"
-        Me.BunifuThinButton24.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton24.TabIndex = 59
-        Me.BunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label_pin
         '
         Me.Label_pin.AutoSize = True
-        Me.Label_pin.BackColor = System.Drawing.Color.Black
+        Me.Label_pin.BackColor = System.Drawing.Color.Transparent
         Me.Label_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_pin.ForeColor = System.Drawing.Color.White
-        Me.Label_pin.Location = New System.Drawing.Point(62, 266)
+        Me.Label_pin.Location = New System.Drawing.Point(62, 267)
         Me.Label_pin.Name = "Label_pin"
-        Me.Label_pin.Size = New System.Drawing.Size(42, 25)
+        Me.Label_pin.Size = New System.Drawing.Size(54, 25)
         Me.Label_pin.TabIndex = 49
-        Me.Label_pin.Text = "Pin"
-        '
-        'BunifuThinButton23
-        '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(22, 249)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton23.TabIndex = 58
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_pin.Text = "Pin :"
         '
         'BunifuTextbox1
         '
@@ -307,14 +259,14 @@ Partial Class form_alterarPin
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_confirmar)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_alterar)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_pin)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton24)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_pin)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_saldo)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label6)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label7)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_num)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox3)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -339,6 +291,34 @@ Partial Class form_alterarPin
         '
         'Timer1
         '
+        '
+        'BunifuTextbox2
+        '
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(18, 254)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(355, 51)
+        Me.BunifuTextbox2.TabIndex = 71
+        Me.BunifuTextbox2.text = ""
+        '
+        'BunifuTextbox3
+        '
+        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox3.Enabled = False
+        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(17, 320)
+        Me.BunifuTextbox3.Name = "BunifuTextbox3"
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(445, 51)
+        Me.BunifuTextbox3.TabIndex = 72
+        Me.BunifuTextbox3.text = ""
         '
         'form_alterarPin
         '
@@ -368,9 +348,7 @@ Partial Class form_alterarPin
     Friend WithEvents Label_confirmar As Label
     Friend WithEvents button_alterar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents TextBox_pin As TextBox
-    Friend WithEvents BunifuThinButton24 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents Label_pin As Label
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label_saldo As Label
     Friend WithEvents Label6 As Label
@@ -381,4 +359,6 @@ Partial Class form_alterarPin
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents BunifuTextbox3 As Bunifu.Framework.UI.BunifuTextbox
 End Class

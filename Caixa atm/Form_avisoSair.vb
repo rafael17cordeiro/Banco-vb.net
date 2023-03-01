@@ -31,17 +31,21 @@ Public Class Form_avisoSair
 
 
 
-    Private Sub BunifuThinButton22_Click_1(sender As Object, e As EventArgs) Handles BunifuThinButton22.Click
-        Me.Close()
-        Form_sair.Show()
-    End Sub
 
-    Private Sub BunifuThinButton21_Click_1(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+
+
+
+
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Me.Close()
         Form_login.Show()
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
-
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Close()
+        Form_sair.Show()
     End Sub
+
+
 End Class

@@ -35,15 +35,15 @@ Partial Class Form_transferir
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.button_transferir = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.TextBox_iban = New System.Windows.Forms.TextBox()
-        Me.BunifuThinButton24 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Label_iban = New System.Windows.Forms.Label()
-        Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuTextbox1 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label_saldo = New System.Windows.Forms.Label()
         Me.Label_num = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +51,7 @@ Partial Class Form_transferir
         'Label_euro
         '
         Me.Label_euro.AutoSize = True
-        Me.Label_euro.BackColor = System.Drawing.Color.Black
+        Me.Label_euro.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_euro.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_euro.ForeColor = System.Drawing.Color.White
         Me.Label_euro.Location = New System.Drawing.Point(419, 331)
@@ -81,10 +81,10 @@ Partial Class Form_transferir
         'Label_montante
         '
         Me.Label_montante.AutoSize = True
-        Me.Label_montante.BackColor = System.Drawing.Color.Black
+        Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(41, 334)
+        Me.Label_montante.Location = New System.Drawing.Point(53, 333)
         Me.Label_montante.Name = "Label_montante"
         Me.Label_montante.Size = New System.Drawing.Size(121, 25)
         Me.Label_montante.TabIndex = 37
@@ -103,14 +103,14 @@ Partial Class Form_transferir
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_montante)
         Me.BunifuGradientPanel1.Controls.Add(Me.button_transferir)
         Me.BunifuGradientPanel1.Controls.Add(Me.TextBox_iban)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton24)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_iban)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuThinButton23)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox1)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label11)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_saldo)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label_num)
         Me.BunifuGradientPanel1.Controls.Add(Me.Label12)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuTextbox3)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -148,9 +148,10 @@ Partial Class Form_transferir
         'TextBox_montante
         '
         Me.TextBox_montante.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_montante.Location = New System.Drawing.Point(179, 329)
+        Me.TextBox_montante.Location = New System.Drawing.Point(179, 332)
+        Me.TextBox_montante.Multiline = True
         Me.TextBox_montante.Name = "TextBox_montante"
-        Me.TextBox_montante.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_montante.Size = New System.Drawing.Size(231, 29)
         Me.TextBox_montante.TabIndex = 51
         '
         'button_cancelar
@@ -207,40 +208,16 @@ Partial Class Form_transferir
         'TextBox_iban
         '
         Me.TextBox_iban.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_iban.Location = New System.Drawing.Point(182, 262)
+        Me.TextBox_iban.Location = New System.Drawing.Point(139, 266)
+        Me.TextBox_iban.Multiline = True
         Me.TextBox_iban.Name = "TextBox_iban"
-        Me.TextBox_iban.Size = New System.Drawing.Size(231, 34)
+        Me.TextBox_iban.Size = New System.Drawing.Size(231, 29)
         Me.TextBox_iban.TabIndex = 39
-        '
-        'BunifuThinButton24
-        '
-        Me.BunifuThinButton24.ActiveBorderThickness = 1
-        Me.BunifuThinButton24.ActiveCornerRadius = 50
-        Me.BunifuThinButton24.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton24.BackgroundImage = CType(resources.GetObject("BunifuThinButton24.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton24.ButtonText = ""
-        Me.BunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton24.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton24.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleBorderThickness = 1
-        Me.BunifuThinButton24.IdleCornerRadius = 50
-        Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(23, 312)
-        Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton24.Name = "BunifuThinButton24"
-        Me.BunifuThinButton24.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton24.TabIndex = 59
-        Me.BunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label_iban
         '
         Me.Label_iban.AutoSize = True
-        Me.Label_iban.BackColor = System.Drawing.Color.Black
+        Me.Label_iban.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label_iban.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_iban.ForeColor = System.Drawing.Color.White
         Me.Label_iban.Location = New System.Drawing.Point(62, 266)
@@ -248,31 +225,6 @@ Partial Class Form_transferir
         Me.Label_iban.Size = New System.Drawing.Size(71, 25)
         Me.Label_iban.TabIndex = 49
         Me.Label_iban.Text = "Iban :"
-        '
-        'BunifuThinButton23
-        '
-        Me.BunifuThinButton23.ActiveBorderThickness = 1
-        Me.BunifuThinButton23.ActiveCornerRadius = 50
-        Me.BunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuThinButton23.BackgroundImage = CType(resources.GetObject("BunifuThinButton23.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton23.ButtonText = ""
-        Me.BunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton23.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleBorderThickness = 1
-        Me.BunifuThinButton23.IdleCornerRadius = 50
-        Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.Black
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(22, 249)
-        Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton23.Name = "BunifuThinButton23"
-        Me.BunifuThinButton23.Size = New System.Drawing.Size(435, 62)
-        Me.BunifuThinButton23.TabIndex = 58
-        Me.BunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuTextbox1
         '
@@ -338,6 +290,34 @@ Partial Class Form_transferir
         'Timer1
         '
         '
+        'BunifuTextbox2
+        '
+        Me.BunifuTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox2.BackgroundImage = CType(resources.GetObject("BunifuTextbox2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox2.Enabled = False
+        Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(18, 255)
+        Me.BunifuTextbox2.Name = "BunifuTextbox2"
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(382, 51)
+        Me.BunifuTextbox2.TabIndex = 70
+        Me.BunifuTextbox2.text = ""
+        '
+        'BunifuTextbox3
+        '
+        Me.BunifuTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BunifuTextbox3.BackgroundImage = CType(resources.GetObject("BunifuTextbox3.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTextbox3.Enabled = False
+        Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
+        Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(18, 321)
+        Me.BunifuTextbox3.Name = "BunifuTextbox3"
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(447, 51)
+        Me.BunifuTextbox3.TabIndex = 71
+        Me.BunifuTextbox3.text = ""
+        '
         'Form_transferir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -375,11 +355,11 @@ Partial Class Form_transferir
     Friend WithEvents Label_iban As Label
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents BunifuTextbox1 As Bunifu.Framework.UI.BunifuTextbox
-    Friend WithEvents BunifuThinButton23 As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents BunifuThinButton24 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents button_cancelar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents button_transferir As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox_logo As PictureBox
     Friend WithEvents BunifuProgressBar1 As Bunifu.Framework.UI.BunifuProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents BunifuTextbox2 As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents BunifuTextbox3 As Bunifu.Framework.UI.BunifuTextbox
 End Class

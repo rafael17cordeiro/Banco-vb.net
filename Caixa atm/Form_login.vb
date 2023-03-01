@@ -82,6 +82,7 @@ Public Class Form_login
             ElseIf num_ut <> 0 And num_block(num_ut) = num_ut <> 0 Then
                 MsgBox("A sua conta esta Banida ")
             ElseIf checker_ut = True And checker_pin = False Then
+
                 MsgBox("Pin não correspondente")
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
@@ -91,7 +92,6 @@ Public Class Form_login
                 MsgBox("Numero de utilizador não correspondete")
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
-
 
             ElseIf num_ut <> 69 And pin <> 6969 Then
                 MsgBox("Dados não correspondetes")
@@ -117,7 +117,6 @@ Public Class Form_login
     Public num_ut As Integer
     Dim error_conter As Integer = 0
     Dim i As Integer
-
     Private borderForm As New Form
     Public pin As Integer
 
@@ -156,7 +155,7 @@ Public Class Form_login
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles button_entrar.Click
         Dim checker_pin As Boolean = False
         Dim checker_ut As Boolean = False
-
+        Dim anterior As Integer = num_ut
 
 
         num_ut = Val(TextBox_user.Text)
@@ -193,10 +192,9 @@ Public Class Form_login
 
 
 
+
         If TextBox_user.Text = "" Or TextBox_pin.Text = "" Then
             MsgBox("Preencha todos os espaços")
-        ElseIf Not IsNumeric(TextBox_user.Text) Then
-            MsgBox("Numero de utilizador não deve conter caraceteres")
 
         ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
 
@@ -204,7 +202,7 @@ Public Class Form_login
             Timer1.Start()
 
         ElseIf num_ut <> 0 And num_block(num_ut) = num_ut <> 0 Then
-            MsgBox("A sua conta esta Banida ")
+            MsgBox("A sua conta esta Banida . Para recuperacao de conta e necessario acesso administrativo")
         ElseIf checker_ut = True And checker_pin = False Then
             MsgBox("Pin não correspondente")
             TextBox_user.Text = ""
@@ -212,29 +210,40 @@ Public Class Form_login
             error_conter += 1
             BunifuProgressBar1.Value = 0
 
+            If anterior <> num_ut Then
+                anterior = num_ut
+            Else
+
+            End If
+
+
+
         ElseIf checker_ut = False And checker_pin = True Then
             MsgBox("Numero de utilizador não correspondete")
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
-            checker_pin = False
-            checker_ut = False
+
 
 
         ElseIf num_ut <> 69 And pin <> 6969 Then
             MsgBox("Dados não correspondetes")
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
-            checker_pin = False
-            checker_ut = False
+
 
 
         End If
 
-        If error_conter = 3 Then
-            MsgBox("A sua conta foi blockeada")
-            num_block(num_ut) = num_ut
+        If checker_ut = True And checker_pin = False And num_ut <> anterior Then
             error_conter = 0
         End If
+
+
+        If error_conter = 3 Then
+                MsgBox("A sua conta foi blockeada")
+                num_block(num_ut) = num_ut
+                error_conter = 0
+            End If
         'nesta secção serve simplesmente para o utilizador saber melhor que erro ele esta a cometer e avisa lo do mesmo
         '--------------------------- fim secção error checker --------------------------
     End Sub
@@ -298,7 +307,5 @@ Public Class Form_login
             e.Handled = True
         End If
     End Sub
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
-    End Sub
 End Class
