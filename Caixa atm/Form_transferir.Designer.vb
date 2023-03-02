@@ -24,15 +24,16 @@ Partial Class Form_transferir
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_transferir))
-        Me.Label_euro = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label_montante = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuProgressBar1 = New Bunifu.Framework.UI.BunifuProgressBar()
+        Me.Label_euro = New System.Windows.Forms.Label()
         Me.PictureBox_logo = New System.Windows.Forms.PictureBox()
         Me.TextBox_montante = New System.Windows.Forms.TextBox()
         Me.button_cancelar = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Label_montante = New System.Windows.Forms.Label()
         Me.button_transferir = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.TextBox_iban = New System.Windows.Forms.TextBox()
         Me.Label_iban = New System.Windows.Forms.Label()
@@ -43,22 +44,9 @@ Partial Class Form_transferir
         Me.Label12 = New System.Windows.Forms.Label()
         Me.BunifuTextbox2 = New Bunifu.Framework.UI.BunifuTextbox()
         Me.BunifuTextbox3 = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label_euro
-        '
-        Me.Label_euro.AutoSize = True
-        Me.Label_euro.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label_euro.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_euro.ForeColor = System.Drawing.Color.White
-        Me.Label_euro.Location = New System.Drawing.Point(433, 331)
-        Me.Label_euro.Name = "Label_euro"
-        Me.Label_euro.Size = New System.Drawing.Size(25, 28)
-        Me.Label_euro.TabIndex = 46
-        Me.Label_euro.Text = "$"
         '
         'Label10
         '
@@ -78,17 +66,8 @@ Partial Class Form_transferir
         Me.Label5.Size = New System.Drawing.Size(0, 28)
         Me.Label5.TabIndex = 42
         '
-        'Label_montante
+        'Timer1
         '
-        Me.Label_montante.AutoSize = True
-        Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_montante.ForeColor = System.Drawing.Color.White
-        Me.Label_montante.Location = New System.Drawing.Point(67, 333)
-        Me.Label_montante.Name = "Label_montante"
-        Me.Label_montante.Size = New System.Drawing.Size(121, 25)
-        Me.Label_montante.TabIndex = 37
-        Me.Label_montante.Text = "Montante :"
         '
         'BunifuGradientPanel1
         '
@@ -132,6 +111,18 @@ Partial Class Form_transferir
         Me.BunifuProgressBar1.Size = New System.Drawing.Size(798, 17)
         Me.BunifuProgressBar1.TabIndex = 67
         Me.BunifuProgressBar1.Value = 0
+        '
+        'Label_euro
+        '
+        Me.Label_euro.AutoSize = True
+        Me.Label_euro.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Label_euro.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_euro.ForeColor = System.Drawing.Color.White
+        Me.Label_euro.Location = New System.Drawing.Point(433, 331)
+        Me.Label_euro.Name = "Label_euro"
+        Me.Label_euro.Size = New System.Drawing.Size(25, 28)
+        Me.Label_euro.TabIndex = 46
+        Me.Label_euro.Text = "$"
         '
         'PictureBox_logo
         '
@@ -178,6 +169,18 @@ Partial Class Form_transferir
         Me.button_cancelar.Size = New System.Drawing.Size(169, 46)
         Me.button_cancelar.TabIndex = 63
         Me.button_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label_montante
+        '
+        Me.Label_montante.AutoSize = True
+        Me.Label_montante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Label_montante.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_montante.ForeColor = System.Drawing.Color.White
+        Me.Label_montante.Location = New System.Drawing.Point(67, 333)
+        Me.Label_montante.Name = "Label_montante"
+        Me.Label_montante.Size = New System.Drawing.Size(121, 25)
+        Me.Label_montante.TabIndex = 37
+        Me.Label_montante.Text = "Montante :"
         '
         'button_transferir
         '
@@ -312,9 +315,6 @@ Partial Class Form_transferir
         Me.BunifuTextbox3.Size = New System.Drawing.Size(447, 51)
         Me.BunifuTextbox3.TabIndex = 71
         Me.BunifuTextbox3.text = ""
-        '
-        'Timer1
-        '
         '
         'Form_transferir
         '

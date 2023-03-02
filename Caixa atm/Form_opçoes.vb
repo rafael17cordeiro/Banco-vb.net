@@ -31,7 +31,7 @@ Public Class Form_opçoes
         Application.Exit()
     End Sub
     Private borderForm As New Form
-    ' estas function server para arredondar os cantos do formulario
+
 
 
     Private Function RoundedRectangle(rect As RectangleF, diam As Single) As Drawing2D.GraphicsPath
@@ -131,7 +131,5 @@ Public Class Form_opçoes
         form_alterarPin.Show()
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
-    End Sub
 End Class

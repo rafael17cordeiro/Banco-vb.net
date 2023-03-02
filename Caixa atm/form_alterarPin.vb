@@ -67,17 +67,17 @@ Public Class form_alterarPin
             Me.Hide()
             Form_opçoes.Show()
         ElseIf result = DialogResult.No Then
-            ' Code to be executed if "No" button is clicked
+
         End If
     End Sub
 
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
-        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+        BunifuProgressBar1.Value += 1
+        If BunifuProgressBar1.Value = 100 Then
             Timer1.Stop()
-            If Timer1.Enabled = False Then 'execute code when the timer stops
+            If Timer1.Enabled = False Then
                 Dim pin As Integer = Val(TextBox_pin.Text)
                 If Val(TextBox_pin.Text) <> Val(TextBox_confirmar.Text) Then
 
@@ -107,4 +107,6 @@ Public Class form_alterarPin
             e.Handled = True
         End If
     End Sub
+
+
 End Class

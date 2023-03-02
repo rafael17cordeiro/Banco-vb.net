@@ -96,15 +96,15 @@ Public Class Form_deposito
             Me.Close()
             Form_opçoes.Show()
         ElseIf result = DialogResult.No Then
-            ' Code to be executed if "No" button is clicked
+
         End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
-        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+        BunifuProgressBar1.Value += 1
+        If BunifuProgressBar1.Value = 100 Then
             Timer1.Stop()
-            If Timer1.Enabled = False Then 'execute code when the timer stops
+            If Timer1.Enabled = False Then
                 Dim montante As Integer = Val(TextBox1.Text)
                 If montante < 0 Or TextBox1.Text = "" Then
                     MsgBox("Montante invalido")
@@ -125,7 +125,5 @@ Public Class Form_deposito
         End If
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
-    End Sub
 End Class

@@ -89,7 +89,7 @@
             Me.Close()
             Form_opçoes.Show()
         ElseIf result = DialogResult.No Then
-            ' Code to be executed if "No" button is clicked
+
         End If
     End Sub
 
@@ -100,10 +100,10 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
-        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
+        BunifuProgressBar1.Value += 1
+        If BunifuProgressBar1.Value = 100 Then
             Timer1.Stop()
-            If Timer1.Enabled = False Then 'execute code when the timer stops
+            If Timer1.Enabled = False Then
                 Dim iban As Integer = Val(TextBox_iban.Text)
                 Dim montante As Integer = Val(TextBox_montante.Text)
                 Dim checker_ut As Boolean = False
@@ -149,7 +149,7 @@
         End If
     End Sub
 
-    Private Sub TextBox_montante_TextChanged(sender As Object, e As EventArgs) Handles TextBox_montante.TextChanged
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
     End Sub
 End Class

@@ -113,7 +113,5 @@ Public Class Form_levantamentos
         End If
     End Sub
 
-    Private Sub BunifuTextbox2_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox2.OnTextChange
 
-    End Sub
 End Class
