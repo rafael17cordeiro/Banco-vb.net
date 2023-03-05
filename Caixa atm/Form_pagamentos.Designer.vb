@@ -81,7 +81,7 @@ Partial Class Form_pagamentos
         Me.Label_num.Name = "Label_num"
         Me.Label_num.Size = New System.Drawing.Size(205, 25)
         Me.Label_num.TabIndex = 40
-        Me.Label_num.Text = "Numero da conta :"
+        Me.Label_num.Text = "Número da conta :"
         '
         'Label12
         '

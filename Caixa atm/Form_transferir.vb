@@ -83,7 +83,7 @@
 
 
     Private Sub BunifuThinButton25_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair da Transferencia?", "Sair de deposito", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair da Transferencia?", "Sair de transferencia", MessageBoxButtons.YesNo)
 
         If result = DialogResult.Yes Then
             Me.Close()
@@ -117,7 +117,7 @@
                     End If
                 Next
 
-                If checker_ut = False Or TextBox_iban.Text = "" Or iban = Form_login.num_ut Then
+                If checker_ut = False Or TextBox_iban.Text = "" Or Val(TextBox_iban.Text) = 0 Or iban = Form_login.num_ut Then
                     MsgBox("O numero de iban inserido não é válido")
                     BunifuProgressBar1.Value = 0
                 ElseIf montante < 0 Then

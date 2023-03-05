@@ -131,7 +131,7 @@
     End Sub
 
     Private Sub BunifuThinButton25_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do Desbloquear?", "Sair de deposito", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do Desbloquear?", "Sair de admin pin", MessageBoxButtons.YesNo)
         If result = DialogResult.Yes Then
             Me.Close()
             Form_admin.Show()

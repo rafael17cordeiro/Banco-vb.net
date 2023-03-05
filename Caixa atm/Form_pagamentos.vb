@@ -2,7 +2,7 @@
 
     Private Sub Form_pagamentos_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = 27 Then
-            Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair dos pagamentos?", "Sair de deposito", MessageBoxButtons.YesNo)
+            Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair dos pagamentos?", "Sair de Pagamentos", MessageBoxButtons.YesNo)
 
             If result = DialogResult.Yes Then
                 Me.Close()

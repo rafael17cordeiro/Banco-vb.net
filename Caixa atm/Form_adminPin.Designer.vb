@@ -130,7 +130,7 @@ Partial Class Form_adminPin
         'TextBox_num
         '
         Me.TextBox_num.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_num.Location = New System.Drawing.Point(229, 208)
+        Me.TextBox_num.Location = New System.Drawing.Point(290, 208)
         Me.TextBox_num.Name = "TextBox_num"
         Me.TextBox_num.Size = New System.Drawing.Size(231, 33)
         Me.TextBox_num.TabIndex = 39
@@ -143,9 +143,9 @@ Partial Class Form_adminPin
         Me.Label13.ForeColor = System.Drawing.Color.White
         Me.Label13.Location = New System.Drawing.Point(79, 211)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(147, 25)
+        Me.Label13.Size = New System.Drawing.Size(205, 25)
         Me.Label13.TabIndex = 49
-        Me.Label13.Text = "Nº da conta :"
+        Me.Label13.Text = "Número da conta :"
         '
         'BunifuTextbox1
         '
@@ -237,7 +237,7 @@ Partial Class Form_adminPin
         Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
         Me.BunifuTextbox2.Location = New System.Drawing.Point(43, 199)
         Me.BunifuTextbox2.Name = "BunifuTextbox2"
-        Me.BunifuTextbox2.Size = New System.Drawing.Size(439, 51)
+        Me.BunifuTextbox2.Size = New System.Drawing.Size(496, 51)
         Me.BunifuTextbox2.TabIndex = 72
         Me.BunifuTextbox2.text = ""
         '
