@@ -211,6 +211,7 @@ Public Class Form_login
         End If
         If num_ut = 69 And pin = 6969 Then
             button_admin.Enabled = True
+            num_ut = 0
         End If
 
         ' estas linhas de codigo serve simplesmente para verificar se o numero inserido
