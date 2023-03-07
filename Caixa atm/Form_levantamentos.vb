@@ -78,7 +78,7 @@ Public Class Form_levantamentos
             Timer1.Stop()
             If Timer1.Enabled = False Then
                 Dim montante As Integer = Val(TextBox_montante.Text)
-                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or montante Mod 5 And Val(TextBox_montante.Text) < 250 Then
+                If montante < 0 Or montante > saldo Or TextBox_montante.Text = "" Or Val(TextBox_montante.Text) Mod 5 And Val(TextBox_montante.Text) < 250 Then
                     MsgBox("Montante invalido")
                     BunifuProgressBar1.Value = 0
                 Else
