@@ -9,8 +9,10 @@
             ElseIf num_block(num) <> 0 Then
                 num_block(num) = 0
                 MsgBox("Conta liberada com sucesso")
+                clientes(num, 2) = 0
                 Me.Close()
                 Form_admin.Show()
+
             End If
         End If
 
