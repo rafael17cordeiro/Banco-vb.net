@@ -77,16 +77,6 @@ Caixa atm
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Caixa_atm.My.Resources.Resources.log_out">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Caixa_atm.My.Resources.Resources.log_out__1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Caixa_atm.My.Resources.Resources.menu__2_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

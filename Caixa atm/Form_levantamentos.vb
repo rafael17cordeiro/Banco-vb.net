@@ -60,7 +60,7 @@ Public Class Form_levantamentos
     End Sub
 
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do Levantamento?", "Sair de Levantamentos", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair do Levantamento?", "Sair de deposito", MessageBoxButtons.YesNo)
 
         If result = DialogResult.Yes Then
             Me.Close()
@@ -113,5 +113,7 @@ Public Class Form_levantamentos
         End If
     End Sub
 
+    Private Sub BunifuTextbox2_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox2.OnTextChange
 
+    End Sub
 End Class

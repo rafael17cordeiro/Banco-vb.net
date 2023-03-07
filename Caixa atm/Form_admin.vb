@@ -44,7 +44,9 @@
 
     End Sub
 
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
 
+    End Sub
 
     Private Sub BunifuThinButton26_Click(sender As Object, e As EventArgs) Handles button_2.Click
         Me.Close()

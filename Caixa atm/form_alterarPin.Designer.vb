@@ -62,7 +62,7 @@ Partial Class form_alterarPin
         'TextBox_confirmar
         '
         Me.TextBox_confirmar.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_confirmar.Location = New System.Drawing.Point(192, 330)
+        Me.TextBox_confirmar.Location = New System.Drawing.Point(178, 331)
         Me.TextBox_confirmar.Multiline = True
         Me.TextBox_confirmar.Name = "TextBox_confirmar"
         Me.TextBox_confirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
@@ -101,11 +101,11 @@ Partial Class form_alterarPin
         Me.Label_confirmar.BackColor = System.Drawing.Color.Transparent
         Me.Label_confirmar.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_confirmar.ForeColor = System.Drawing.Color.White
-        Me.Label_confirmar.Location = New System.Drawing.Point(70, 333)
+        Me.Label_confirmar.Location = New System.Drawing.Point(56, 334)
         Me.Label_confirmar.Name = "Label_confirmar"
-        Me.Label_confirmar.Size = New System.Drawing.Size(125, 25)
+        Me.Label_confirmar.Size = New System.Drawing.Size(113, 25)
         Me.Label_confirmar.TabIndex = 37
-        Me.Label_confirmar.Text = "Confirmar :"
+        Me.Label_confirmar.Text = "Confirmar"
         '
         'button_alterar
         '
@@ -135,7 +135,7 @@ Partial Class form_alterarPin
         'TextBox_pin
         '
         Me.TextBox_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_pin.Location = New System.Drawing.Point(133, 263)
+        Me.TextBox_pin.Location = New System.Drawing.Point(119, 264)
         Me.TextBox_pin.Multiline = True
         Me.TextBox_pin.Name = "TextBox_pin"
         Me.TextBox_pin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
@@ -148,7 +148,7 @@ Partial Class form_alterarPin
         Me.Label_pin.BackColor = System.Drawing.Color.Transparent
         Me.Label_pin.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_pin.ForeColor = System.Drawing.Color.White
-        Me.Label_pin.Location = New System.Drawing.Point(76, 266)
+        Me.Label_pin.Location = New System.Drawing.Point(62, 267)
         Me.Label_pin.Name = "Label_pin"
         Me.Label_pin.Size = New System.Drawing.Size(54, 25)
         Me.Label_pin.TabIndex = 49
@@ -201,7 +201,7 @@ Partial Class form_alterarPin
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(205, 25)
         Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Número da conta :"
+        Me.Label7.Text = "Numero da conta :"
         '
         'Label_num
         '
@@ -283,7 +283,7 @@ Partial Class form_alterarPin
         Me.BunifuTextbox2.Enabled = False
         Me.BunifuTextbox2.ForeColor = System.Drawing.Color.White
         Me.BunifuTextbox2.Icon = CType(resources.GetObject("BunifuTextbox2.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox2.Location = New System.Drawing.Point(32, 253)
+        Me.BunifuTextbox2.Location = New System.Drawing.Point(18, 254)
         Me.BunifuTextbox2.Name = "BunifuTextbox2"
         Me.BunifuTextbox2.Size = New System.Drawing.Size(355, 51)
         Me.BunifuTextbox2.TabIndex = 71
@@ -297,7 +297,7 @@ Partial Class form_alterarPin
         Me.BunifuTextbox3.Enabled = False
         Me.BunifuTextbox3.ForeColor = System.Drawing.Color.White
         Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
-        Me.BunifuTextbox3.Location = New System.Drawing.Point(31, 319)
+        Me.BunifuTextbox3.Location = New System.Drawing.Point(17, 320)
         Me.BunifuTextbox3.Name = "BunifuTextbox3"
         Me.BunifuTextbox3.Size = New System.Drawing.Size(445, 51)
         Me.BunifuTextbox3.TabIndex = 72

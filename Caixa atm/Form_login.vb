@@ -45,6 +45,9 @@ Public Class Form_login
                     checker_ut = False
                 End If
             Next
+            ' estas linhas de codigo serve simplesmente para verificar se o numero inserido esta
+            ' dentro do array se nao vai direto para o error checker(linha186)
+            '--------------------------- fim secção num ut --------------------------
 
             pin = Val(TextBox_pin.Text)
             If TextBox_pin.TextLength = 4 Then
@@ -59,62 +62,64 @@ Public Class Form_login
             End If
             If num_ut = 69 And pin = 6969 Then
                 button_admin.Enabled = True
+                num_ut = 0
             End If
 
+            ' estas linhas de codigo serve simplesmente para verificar se o numero inserido
+            ' esta dentro do array se nao vai direto para o error checker(linha186)
+            '--------------------------- fim secção pin --------------------------
 
 
 
 
-            If num_ut >= 0 And num_ut <= LIM Then
-                If TextBox_user.Text = "" Or TextBox_pin.Text = "" Then
-                    MsgBox("Preencha todos os espaços")
-
-                ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
-
-                    Timer1.Interval = 5
-                    Timer1.Start()
 
 
-                ElseIf checker_ut = True And checker_pin = False And clientes(num_ut, 2) < 3 Then
-                    MsgBox("Pin não correspondente")
-                    TextBox_pin.Text = ""
-                    clientes(num_ut, 2) += 1
-                    BunifuProgressBar1.Value = 0
+            If TextBox_user.Text = "" Or TextBox_pin.Text = "" Then
+                MsgBox("Preencha todos os espaços")
+
+            ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
+
+                Timer1.Interval = 5
+                Timer1.Start()
+
+            ElseIf num_ut <> 0 And num_block(num_ut) = num_ut <> 0 Then
+                MsgBox("A sua conta esta Banida . Para recuperacao de conta e necessario acesso administrativo")
+            ElseIf checker_ut = True And checker_pin = False Then
+                MsgBox("Pin não correspondente")
+                TextBox_pin.Text = ""
+                clientes(num_ut, 2) += 1
+                BunifuProgressBar1.Value = 0
 
 
-                ElseIf checker_ut = False And checker_pin = True Then
-                    MsgBox("Numero de utilizador não correspondete")
-                    TextBox_user.Text = ""
-                    TextBox_pin.Text = ""
-
-
-
-                ElseIf num_ut <> 69 And pin <> 6969 And clientes(num_ut, 2) < 3 Then
-                    MsgBox("Dados não correspondetes")
-                    TextBox_user.Text = ""
-                    TextBox_pin.Text = ""
-
-
-
-                End If
-            Else
+            ElseIf checker_ut = False And checker_pin = True Then
                 MsgBox("Numero de utilizador não correspondete")
                 TextBox_user.Text = ""
                 TextBox_pin.Text = ""
+
+
+
+            ElseIf num_ut <> 69 And pin <> 6969 Then
+                MsgBox("Dados não correspondetes")
+                TextBox_user.Text = ""
+                TextBox_pin.Text = ""
+
+
+
             End If
 
 
-            If num_ut >= 0 And num_ut <= LIM Then
-                    If clientes(num_ut, 2) = 3 Then
-                        MsgBox("A sua conta foi bloqueada . Para recuperação da conta é necessario acesso administrativo")
-                        num_block(num_ut) = num_ut
-                        error_conter = 0
-                    End If
-                End If
 
-            ElseIf e.KeyCode = 27 Then
 
-                Form_avisoSair.Show()
+            If clientes(num_ut, 2) = 3 Then
+                MsgBox("A sua conta foi Suspendida . Para recuperação da conta é necessario acesso administrativo")
+                num_block(num_ut) = num_ut
+                error_conter = 0
+            End If
+            'nesta secção serve simplesmente para o utilizador saber melhor que erro ele esta a cometer e avisa lo do mesmo
+            '--------------------------- fim secção error checker --------------------------
+        ElseIf e.KeyCode = 27 Then
+
+            Form_avisoSair.Show()
         End If
     End Sub
     Public num_ut As Integer
@@ -186,6 +191,9 @@ Public Class Form_login
                 checker_ut = False
             End If
         Next
+        ' estas linhas de codigo serve simplesmente para verificar se o numero inserido esta
+        ' dentro do array se nao vai direto para o error checker(linha186)
+        '--------------------------- fim secção num ut --------------------------
 
         pin = Val(TextBox_pin.Text)
         If TextBox_pin.TextLength = 4 Then
@@ -202,56 +210,57 @@ Public Class Form_login
             button_admin.Enabled = True
         End If
 
+        ' estas linhas de codigo serve simplesmente para verificar se o numero inserido
+        ' esta dentro do array se nao vai direto para o error checker(linha186)
+        '--------------------------- fim secção pin --------------------------
 
 
 
 
-        If num_ut >= 0 And num_ut <= LIM Then
-            If TextBox_user.Text = "" Or TextBox_pin.Text = "" Then
-                MsgBox("Preencha todos os espaços")
-
-            ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
-
-                Timer1.Interval = 5
-                Timer1.Start()
 
 
-            ElseIf checker_ut = True And checker_pin = False And clientes(num_ut, 2) < 3 Then
-                MsgBox("Pin não correspondente")
-                TextBox_pin.Text = ""
-                clientes(num_ut, 2) += 1
-                BunifuProgressBar1.Value = 0
+        If TextBox_user.Text = "" Or TextBox_pin.Text = "" Then
+            MsgBox("Preencha todos os espaços")
+
+        ElseIf checker_ut = True And num_block(num_ut) <> num_ut And checker_pin = True Then
+
+            Timer1.Interval = 5
+            Timer1.Start()
 
 
-            ElseIf checker_ut = False And checker_pin = True Then
-                MsgBox("Numero de utilizador não correspondete")
-                TextBox_user.Text = ""
-                TextBox_pin.Text = ""
+        ElseIf checker_ut = True And checker_pin = False Then
+            MsgBox("Pin não correspondente")
+            TextBox_pin.Text = ""
+            clientes(num_ut, 2) += 1
+            BunifuProgressBar1.Value = 0
 
 
-
-            ElseIf num_ut <> 69 And pin <> 6969 And clientes(num_ut, 2) < 3 Then
-                MsgBox("Dados não correspondetes")
-                TextBox_user.Text = ""
-                TextBox_pin.Text = ""
-
-
-
-            End If
-        Else
+        ElseIf checker_ut = False And checker_pin = True Then
             MsgBox("Numero de utilizador não correspondete")
             TextBox_user.Text = ""
             TextBox_pin.Text = ""
+
+
+
+        ElseIf num_ut <> 69 And pin <> 6969 Then
+            MsgBox("Dados não correspondetes")
+            TextBox_user.Text = ""
+            TextBox_pin.Text = ""
+
+
+
         End If
 
 
-        If num_ut >= 0 And num_ut <= LIM Then
-            If clientes(num_ut, 2) = 3 Then
-                MsgBox("A sua conta foi bloqueada . Para recuperação da conta é necessario acesso administrativo")
-                num_block(num_ut) = num_ut
-                error_conter = 0
-            End If
+
+
+        If clientes(num_ut, 2) = 3 Then
+            MsgBox("A sua conta foi Suspendida . Para recuperação da conta é necessario acesso administrativo")
+            num_block(num_ut) = num_ut
+            error_conter = 0
         End If
+        'nesta secção serve simplesmente para o utilizador saber melhor que erro ele esta a cometer e avisa lo do mesmo
+        '--------------------------- fim secção error checker --------------------------
     End Sub
 
     Private Sub BunifuThinButton22_Click(sender As Object, e As EventArgs) Handles button_sair.Click
@@ -298,10 +307,10 @@ Public Class Form_login
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1
-        If BunifuProgressBar1.Value = 100 Then
+        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
+        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
             Timer1.Stop()
-            If Timer1.Enabled = False Then
+            If Timer1.Enabled = False Then 'execute code when the timer stops
                 Me.Hide()
                 Form_opçoes.Show()
             End If

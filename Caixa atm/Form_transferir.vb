@@ -83,13 +83,13 @@
 
 
     Private Sub BunifuThinButton25_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair da Transferencia?", "Sair de transferencia", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("Tem a certeza que pretende sair da Transferencia?", "Sair de deposito", MessageBoxButtons.YesNo)
 
         If result = DialogResult.Yes Then
             Me.Close()
             Form_opçoes.Show()
         ElseIf result = DialogResult.No Then
-
+            ' Code to be executed if "No" button is clicked
         End If
     End Sub
 
@@ -100,10 +100,10 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        BunifuProgressBar1.Value += 1
-        If BunifuProgressBar1.Value = 100 Then
+        BunifuProgressBar1.Value += 1 'increment the value of the progress bar
+        If BunifuProgressBar1.Value = 100 Then 'stop the timer when progress bar is filled
             Timer1.Stop()
-            If Timer1.Enabled = False Then
+            If Timer1.Enabled = False Then 'execute code when the timer stops
                 Dim iban As Integer = Val(TextBox_iban.Text)
                 Dim montante As Integer = Val(TextBox_montante.Text)
                 Dim checker_ut As Boolean = False
@@ -117,7 +117,7 @@
                     End If
                 Next
 
-                If checker_ut = False Or TextBox_iban.Text = "" Or Val(TextBox_iban.Text) = 0 Or iban = Form_login.num_ut Then
+                If checker_ut = False Or TextBox_iban.Text = "" Or iban = Form_login.num_ut Then
                     MsgBox("O numero de iban inserido não é válido")
                     BunifuProgressBar1.Value = 0
                 ElseIf montante < 0 Then
@@ -149,7 +149,7 @@
         End If
     End Sub
 
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
+    Private Sub TextBox_montante_TextChanged(sender As Object, e As EventArgs) Handles TextBox_montante.TextChanged
 
     End Sub
 End Class

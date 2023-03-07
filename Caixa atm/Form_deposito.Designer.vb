@@ -244,7 +244,7 @@ Partial Class Form_deposito
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(205, 25)
         Me.Label7.TabIndex = 26
-        Me.Label7.Text = "Número da conta :"
+        Me.Label7.Text = "Numero da conta :"
         '
         'Label6
         '

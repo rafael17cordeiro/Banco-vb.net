@@ -107,6 +107,4 @@ Public Class form_alterarPin
             e.Handled = True
         End If
     End Sub
-
-
 End Class

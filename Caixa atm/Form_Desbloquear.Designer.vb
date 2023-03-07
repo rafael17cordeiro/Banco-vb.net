@@ -114,8 +114,8 @@ Partial Class Form_Desbloquear
         '
         'TextBox_num
         '
-        Me.TextBox_num.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox_num.Location = New System.Drawing.Point(272, 208)
+        Me.TextBox_num.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_num.Location = New System.Drawing.Point(205, 209)
         Me.TextBox_num.Multiline = True
         Me.TextBox_num.Name = "TextBox_num"
         Me.TextBox_num.Size = New System.Drawing.Size(231, 28)
@@ -147,9 +147,9 @@ Partial Class Form_Desbloquear
         Me.Label_num.ForeColor = System.Drawing.Color.White
         Me.Label_num.Location = New System.Drawing.Point(61, 211)
         Me.Label_num.Name = "Label_num"
-        Me.Label_num.Size = New System.Drawing.Size(205, 25)
+        Me.Label_num.Size = New System.Drawing.Size(147, 25)
         Me.Label_num.TabIndex = 49
-        Me.Label_num.Text = "Número da conta :"
+        Me.Label_num.Text = "Nº da conta :"
         '
         'BunifuTextbox1
         '
@@ -197,7 +197,7 @@ Partial Class Form_Desbloquear
         Me.BunifuTextbox3.Icon = CType(resources.GetObject("BunifuTextbox3.Icon"), System.Drawing.Image)
         Me.BunifuTextbox3.Location = New System.Drawing.Point(25, 198)
         Me.BunifuTextbox3.Name = "BunifuTextbox3"
-        Me.BunifuTextbox3.Size = New System.Drawing.Size(492, 51)
+        Me.BunifuTextbox3.Size = New System.Drawing.Size(427, 51)
         Me.BunifuTextbox3.TabIndex = 74
         Me.BunifuTextbox3.text = ""
         '
